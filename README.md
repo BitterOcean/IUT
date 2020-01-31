@@ -7,7 +7,7 @@ This repository contains all the courseworks (actually, ones I could get my hand
 - ## **Term 97-4** ![Term](https://img.shields.io/badge/Term-4-red)
   - <a href="https://github.com/BitterOcean/IUT/tree/master/Algorithm">Algorithm</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/Arcitecture">Arcitecture</a>
-  - Network
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/Network1">Network</a>
   - Digital Lab
 - ## **Term 98_5** ![Term](https://img.shields.io/badge/Term-5-orange)
   - Database
