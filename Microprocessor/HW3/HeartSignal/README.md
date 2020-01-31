@@ -26,16 +26,16 @@ the output port value should be changed....
 
 ## Step1 : Create the C code in Atmel Studio
 
-Create a new project in the atmel studio and copy all files in the <a href="https://github.com/SajedeNick/HeartSignal/blob/master/main.c">`/main.c`</a> file into your new project folder .
+Create a new project in the atmel studio and copy all files in the <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/HeartSignal/heart.c">`/heart.c`</a> file into your new project folder .
 
 
 ## Step2 : Build your project
 
-After you have built it ,`main.hex` file will be created in your project's folder. This is the only thing you need to program your micro controller.
+After you have built it ,`heart.hex` file will be created in your project's folder. This is the only thing you need to program your micro controller.
 
 
 ## **Files**
-- <a href="https://github.com/SajedeNick/HeartSignal/blob/master/main.c">`/main.c`</a> : This is the main file
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/HeartSignal/heart.c">`/heart.c`</a> : This is the main file
 
 
 
