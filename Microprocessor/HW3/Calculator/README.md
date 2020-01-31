@@ -1,4 +1,4 @@
-# Calculator [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/MaryamSaeedmehr/Calculator)
+# Calculator [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator)
 
 A simple calculator which can perform Signed operations on 64bits numbers with max of two different math symbols or any number of operands but with the same math symbol.
 
@@ -44,12 +44,12 @@ This is just a general explaintion of what you will see in the code but the code
 
 ## Step1 : Create the C code in Atmel Studio
 
-Create a new project in the atmel studio and copy all files in the <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/">`/Codes`</a> folder into your new project folder .
+Create a new project in the atmel studio and copy all files in the <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Codes/">`/Codes`</a> folder into your new project folder .
 
 
 ## Step2 : Build your project
 
-After you have built it , a <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/Debug/Calculator.hex">`Calculator.hex`</a> file will be created in your project's folder. This is the only thing you need to program your avr in the proteus.
+After you have built it , a <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Codes/Debug/Calculator.hex">`Calculator.hex`</a> file will be created in your project's folder. This is the only thing you need to program your avr in the proteus.
 
 
 ## Step3 : Create your circuit
@@ -71,15 +71,15 @@ To ptogram your microcontroler in the proteus , just double click on it and choo
 
 
 ## **Files**
-- <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/">`/Codes`</a> : This is the main folder consists of :
-    * <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/SourceCodes/std_types.h">`/Codes/SourceCodes/std_types.h`</a> : Contains new types of standards data types
-    * <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/calculator_blocks.h">`/Codes/calculator_blocks.h`</a> : Contains the configuarion you set to how much the calculator can handle number of operands,operation
-    * <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/calculator_blocks.c">`/Codes/calculator_blocks.c`</a> : Contains the main work of the calculator as will be explain later
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Codes/">`/Codes`</a> : This is the main folder consists of :
+    * <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Codes/SourceCodes/std_types.h">`/Codes/SourceCodes/std_types.h`</a> : Contains new types of standards data types
+    * <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Codes/calculator_blocks.h">`/Codes/calculator_blocks.h`</a> : Contains the configuarion you set to how much the calculator can handle number of operands,operation
+    * <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Codes/calculator_blocks.c">`/Codes/calculator_blocks.c`</a> : Contains the main work of the calculator as will be explain later
     * <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/Calculator.c">`/Codes/Calculator.c`</a> : the main of the application
-    * <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/SourceCodes/lcd.c">`/Codes/SourceCodes/lcd.c`</a> : normal c driver
-    * <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Codes/SourceCodes/keypad.c">`/Codes/SourceCodes/keypad.c`</a> : normal c driver
-- <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/Calculator.pdsprj">`/Calculator.pdsprj`</a> : Simulation file using proteus
-- <a href="https://github.com/MaryamSaeedmehr/Calculator/blob/master/LICENSE">`/LICENSE`</a> : The license of this project
+    * <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Codes/SourceCodes/lcd.c">`/Codes/SourceCodes/lcd.c`</a> : normal c driver
+    * <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Codes/SourceCodes/keypad.c">`/Codes/SourceCodes/keypad.c`</a> : normal c driver
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/Calculator.pdsprj">`/Calculator.pdsprj`</a> : Simulation file using proteus
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/Calculator/LICENSE">`/LICENSE`</a> : The license of this project
 
 
 
