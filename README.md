@@ -11,10 +11,10 @@ This repository contains all the courseworks (actually, ones I could get my hand
   - <a href="https://github.com/BitterOcean/IUT/tree/master/DigitalLab">Digital Lab</a>
 - ## **Term 98_5** ![Term](https://img.shields.io/badge/Term-5-orange)
   - <a href="https://github.com/BitterOcean/IUT/tree/master/Database">Database</a>
-  - Database Lab
-  - Microprocessor
-  - Operating Systems
-  - Operating System Lab
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/DatabaseLab">Database Lab</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor">Microprocessor</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/OS">Operating Systems</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/OSLab">Operating System Lab</a>
 - ## **Term 98_6** ![Term](https://img.shields.io/badge/Term-6-yellow)
 - ## **Term 99_7** ![Term](https://img.shields.io/badge/Term-7-brightgreen)
 - ## **Term 99_8** ![Term](https://img.shields.io/badge/Term-8-blue)
