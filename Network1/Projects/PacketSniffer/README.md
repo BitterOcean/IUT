@@ -47,8 +47,8 @@ $ sudo python3 main.py
 
 # **Files**
 
-- <a href="https://github.com/BitterOcean/IUT/new/master/Network1/Projects/PacketSniffer/blob/master/main.py">`/main.py`</a> : This is main python File
-- <a href="https://github.com/BitterOcean/IUT/new/master/Network1/Projects/PacketSniffer/blob/master/Temp.pcap">`/Temp.pcap`</a> : Pcap File of all packet captured
+- <a href="https://github.com/BitterOcean/IUT/blob/master/Network1/Projects/PacketSniffer/main.py">`/main.py`</a> : This is main python File
+- <a href="https://github.com/BitterOcean/IUT/blob/master/Network1/Projects/PacketSniffer/Temp.pcap">`/Temp.pcap`</a> : Pcap File of all packet captured
 
 
 # **Support**
