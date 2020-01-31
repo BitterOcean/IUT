@@ -1,4 +1,4 @@
-# BootLoader [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/MaryamSaeedmehr/BootLoader)
+# BootLoader [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/BitterOcean/IUT/tree/master/OS/Projects/BootLoader)
 
 After booting, the BIOS of the computer reads 512 bytes from the boot devices and, if it detects a two-byte "magic number" at the end of those 512 bytes, loads the data from these 512 bytes as code and runs it.
 
@@ -52,8 +52,8 @@ $ qemu-system-x86_64 boot.bin
 
 # **Files**
 
-- <a href="https://github.com/MaryamSaeedmehr/BootLoader/blob/master/boot.asm">`/boot.asm`</a> : This is the Main Assembly File
-- <a href="https://github.com/MaryamSaeedmehr/BootLoader/blob/master/Markdown.pdf">`/Markdown.pdf`</a> : This is a Report of the project in Persian
+- <a href="https://github.com/BitterOcean/IUT/tree/master/OS/Projects/BootLoader/boot.asm">`/boot.asm`</a> : This is the Main Assembly File
+- <a href="https://github.com/BitterOcean/IUT/tree/master/OS/Projects/BootLoader/Markdown.pdf">`/Markdown.pdf`</a> : This is a Report of the project in Persian
 
 
 # **Reference**
@@ -74,6 +74,6 @@ Reach out to me at one of the following places!
 
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2018 © <a href="https://github.com/MaryamSaeedmehr/BootLoader/blob/master/LICENSE">BootLoader Project</a>.
+- Copyright 2018 © <a href="https://github.com/BitterOcean/IUT/tree/master/OS/Projects/BootLoader/LICENSE">BootLoader Project</a>.
 
 
