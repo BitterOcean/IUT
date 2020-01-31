@@ -1,4 +1,4 @@
-# AVR Debouncing  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/MaryamSaeedmehr/AVRDebouncing)
+# AVR Debouncing  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/AVR_Debouncing)
 
 AVR Assembly simple debouncer
 
@@ -15,7 +15,7 @@ For implementing this code yourself, You Need to install below applications :
 
 ## Step1 : Create the Asm code in Atmel Studio
 
-Create a new project in the atmel studio and copy (Ctrl+a then Ctrl+c) <a href="https://github.com/MaryamSaeedmehr/AVRDebouncing/blob/master/Debouncing.asm">`SourceCode`</a> and paste it (Ctrl+v) into your new project.
+Create a new project in the atmel studio and copy (Ctrl+a then Ctrl+c) <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/AVR_Debouncing/Debouncing.asm">`SourceCode`</a> and paste it (Ctrl+v) into your new project.
 
 
 ## Step2 : Build your project
@@ -43,9 +43,9 @@ To program your microcontroler in the proteus , just double click on it and choo
 
 ## **Files**
 
-- <a href="https://github.com/MaryamSaeedmehr/AVRDebouncing/blob/master/Debouncing.asm">`/Debouncing.asm`</a> : This is the main assembly File
-- <a href="https://github.com/MaryamSaeedmehr/AVRDebouncing/blob/master/Debouncing.pdsprj">`/Debouncing.pdsprj`</a> : This is emulated circuit in the proteus
-- <a href="https://github.com/MaryamSaeedmehr/AVRDebouncing/blob/master/LICENSE">`/LICENSE`</a> : The license of this project
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/AVR_Debouncing/Debouncing.asm">`/Debouncing.asm`</a> : This is the main assembly File
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/AVR_Debouncing/Debouncing.pdsprj">`/Debouncing.pdsprj`</a> : This is emulated circuit in the proteus
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/AVR_Debouncing/LICENSE">`/LICENSE`</a> : The license of this project
 
 
 
