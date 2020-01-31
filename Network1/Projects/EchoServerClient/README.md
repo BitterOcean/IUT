@@ -18,7 +18,7 @@ For This Project You Need below Requirements :
 First of All Clone the Project : 
 
 ```shell
-$ git clone https://github.com/BitterOcean/IUT/new/master/Network1/Projects/EchoServerClient.git
+$ git clone https://github.com/BitterOcean/IUT/blob/master/Network1/Projects/EchoServerClient.git
 ```
 
 ## Step1 : Run the EchoServerClient project
@@ -40,9 +40,9 @@ $ python Client.py
 
 # **Files**
 
-- <a href="https://github.com/BitterOcean/IUT/new/master/Network1/Projects/EchoServerClient/blob/master/Client.py">`/Client.py`</a> : This is Client code
-- <a href="https://github.com/BitterOcean/IUT/new/master/Network1/Projects/EchoServerClient/blob/master/Server.py">`/Server.py`</a> : This is main python File
-- <a href="https://github.com/BitterOcean/IUT/new/master/Network1/Projects/EchoServerClient/blob/master/echo.pcapng">`/echo.pcapng`</a> : Wireshark Full Sniffed Packets
+- <a href="https://github.com/BitterOcean/IUT/blob/master/Network1/Projects/EchoServerClient/Client.py">`/Client.py`</a> : This is Client code
+- <a href="https://github.com/BitterOcean/IUT/blob/master/Network1/Projects/EchoServerClient/Server.py">`/Server.py`</a> : This is main python File
+- <a href="https://github.com/BitterOcean/IUT/blob/master/Network1/Projects/EchoServerClient/echo.pcapng">`/echo.pcapng`</a> : Wireshark Full Sniffed Packets
 
 
 # **Support**
