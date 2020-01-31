@@ -1,0 +1,7 @@
+
+n=${1}
+xterm -e ./server.out $n &
+for (( c=1; c<=$n; c++ ));
+do
+        xterm -e ./client.out &
+done
