@@ -28,3 +28,10 @@ This repository contains all the courseworks (actually, ones I could get my hand
   - <a href="https://github.com/BitterOcean/IUT/tree/master/AI">Artificial Intelligence </a>
 - ## **Term 99_7** ![Term](https://img.shields.io/badge/Term-7-blue)
 - ## **Term 99_8** ![Term](https://img.shields.io/badge/Term-8-purple)
+---
+
+# Our Chart
+![GeneralTerms](https://user-images.githubusercontent.com/60509979/73578589-4237f200-4495-11ea-94b0-f5328efcb6d5.png)
+---
+![SpecialTerms](https://user-images.githubusercontent.com/60509979/73578656-6c89af80-4495-11ea-85b4-33ccdc1ca069.png)
+---
