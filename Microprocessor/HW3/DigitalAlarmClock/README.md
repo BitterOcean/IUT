@@ -1,4 +1,4 @@
-# DigitalAlarmClock[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/MaryamSaeedmehr/DigitalAlarmClock)
+# DigitalAlarmClock[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/DigitalAlarmClock)
 
 A simple Digital Alarm Clock
 
@@ -19,7 +19,7 @@ For implementing this code yourself, You Need to install below applications :
 
 ## Step1 : Create the C code in Atmel Studio
 
-Create a new project in the atmel studio and copy all files in the <a href="https://github.com/MaryamSaeedmehr/DigitalAlarmClock/blob/master/Digital_Alarm_clock.c">`/Digital_Alarm_clock.c`</a> file into your new project folder .
+Create a new project in the atmel studio and copy all files in the <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/DigitalAlarmClock/Digital_Alarm_clock.c">`/Digital_Alarm_clock.c`</a> file into your new project folder .
 
 
 ## Step2 : Build your project
@@ -50,9 +50,9 @@ To ptogram your microcontroler in the proteus , just double click on it and choo
 
 
 ## **Files**
-- <a href="https://github.com/MaryamSaeedmehr/DigitalAlarmClock/blob/master/Digital_Alarm_clock.c">`/Digital_Alarm_clock.c`</a> : This is the main file
-- <a href="https://github.com/MaryamSaeedmehr/DigitalAlarmClock/blob/master/Digital_Clock_with_Alarm.pdsprj">`/Digital_Clock_with_Alarm.pdsprj`</a> : Simulation file using proteus
-- <a href="https://github.com/MaryamSaeedmehr/DigitalAlarmClock/blob/master/LICENSE">`/LICENSE`</a> : The license of this project
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/DigitalAlarmClock/Digital_Alarm_clock.c">`/Digital_Alarm_clock.c`</a> : This is the main file
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/DigitalAlarmClock/Digital_Clock_with_Alarm.pdsprj">`/Digital_Clock_with_Alarm.pdsprj`</a> : Simulation file using proteus
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW3/DigitalAlarmClock/LICENSE">`/LICENSE`</a> : The license of this project
 
 
 
