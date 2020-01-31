@@ -1,4 +1,4 @@
-# BlinkingLED [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/MaryamSaeedmehr/BlinkingLED)
+# BlinkingLED [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/BlinkingLEDs)
 
 
 Blinking LED with Atmega16 and Push Button
@@ -18,7 +18,7 @@ For implementing this code yourself, You Need to install below applications :
 
 ## Step1 : Create the Asm code in Atmel Studio
 
-Create a new project in the atmel studio and copy (Ctrl+a then Ctrl+c) <a href="https://github.com/MaryamSaeedmehr/BlinkingLED/blob/master/BlinkingLED.asm">`SourceCode`</a> and paste it into your new project.
+Create a new project in the atmel studio and copy (Ctrl+a then Ctrl+c) <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/BlinkingLEDs/BlinkingLED.asm">`SourceCode`</a> and paste it into your new project.
 
 
 ## Step2 : Build your project
@@ -47,9 +47,9 @@ To ptogram your microcontroler in the proteus , just double click on it and choo
 
 ## **Files**
 
-- <a href="https://github.com/MaryamSaeedmehr/BlinkingLED/blob/master/BlinkingLED.asm">`/BlinkingLED.asm`</a> : This is the main assembly File
-- <a href="https://github.com/MaryamSaeedmehr/BlinkingLED/blob/master/BlinkingLED.pdsprj">`/BlinkingLED.pdsprj`</a> : This is emulated circuit in the proteus
-- <a href="https://github.com/MaryamSaeedmehr/BlinkingLED/blob/master/LICENSE">`/LICENSE`</a> : The license of this project
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/BlinkingLEDs/BlinkingLED.asm">`/BlinkingLED.asm`</a> : This is the main assembly File
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/BlinkingLEDs/BlinkingLED.pdsprj">`/BlinkingLED.pdsprj`</a> : This is emulated circuit in the proteus
+- <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/BlinkingLEDs/LICENSE">`/LICENSE`</a> : The license of this project
 
 
 
@@ -66,4 +66,4 @@ Reach out to me at one of the following places!
 
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2018 © <a href="https://github.com/MaryamSaeedmehr/BlinkingLED/blob/master/LICENSE">BlinkingLED Project</a>.
+- Copyright 2018 © <a href="https://github.com/BitterOcean/IUT/tree/master/Microprocessor/HW1/BlinkingLEDs/LICENSE">BlinkingLED Project</a>.
