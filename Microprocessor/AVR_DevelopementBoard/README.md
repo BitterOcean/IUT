@@ -29,8 +29,9 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 - [CONNECTORS](#CONNECTORS)
 - [IMAGES](#IMAGES)
 - [PCB](#PCB)
-  - ![Download PCB file]("https://www.altium.com/viewer/")
-
+  - ![Download PCB file]("https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/PCB1.PcbDoc")
+- [DOWNLOAD](#DOWNLOAD)
+  - ![Download PDF file]("https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/DevelopmentBoard.pdf")
 
 ## **SCHEMATIC**
 <p align="center">
@@ -60,3 +61,6 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 <img src="https://user-images.githubusercontent.com/60509979/73700038-ac050580-46fa-11ea-94bd-fa6cfb009568.png">
 <b><a href="https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/PCB1.PcbDoc">Download PCB1.PcbDoc file</a></b></br>
 :triangular_flag_on_post: You can use <a href="https://www.altium.com/viewer/">This Link</a>  to open it online!  :wink:  
+
+## **DOWNLOAD**
+<a href="https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/DevelopmentBoard.pdf">Download this file as a PDF</a>
