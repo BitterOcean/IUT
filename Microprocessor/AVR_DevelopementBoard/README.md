@@ -4,7 +4,6 @@
 ![License](https://img.shields.io/packagist/l/doctrine/orm)
 ![platform](https://img.shields.io/badge/Atmega-16%2F32-orange)  
 
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60509979/73697502-f46cf500-46f3-11ea-890c-e181b9283b81.jpg">
 </p>
@@ -22,6 +21,15 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 :heavy_check_mark: Power-On LED indicator  
 :heavy_check_mark: Four mounting holes of 3.2 mm  
 :heavy_check_mark: PCB dimensions 64 mm x 101 mm  
+
+---
+## Table of contents
+- [SCHEMATIC](#SCHEMATIC)
+- [PARTS](#PARTS)
+- [CONNECTORS](#CONNECTORS)
+- [IMAGES](#IMAGES)
+- [PCB](#PCB)
+
 
 ## **SCHEMATIC**
 <p align="center">
