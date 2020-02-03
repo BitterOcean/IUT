@@ -29,7 +29,7 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 - [CONNECTORS](#CONNECTORS)
 - [IMAGES](#IMAGES)
 - [PCB](#PCB)
-  - [Download PCB file]("https://www.altium.com/viewer/")
+  - ![Download PCB file]("https://www.altium.com/viewer/")
 
 
 ## **SCHEMATIC**
