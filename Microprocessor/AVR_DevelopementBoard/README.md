@@ -23,7 +23,7 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 :heavy_check_mark: PCB dimensions 64 mm x 101 mm  
 
 ---
-## Table of contents
+## **Table of contents**
 - [SCHEMATIC](#SCHEMATIC)
 - [PARTS](#PARTS)
 - [CONNECTORS](#CONNECTORS)
