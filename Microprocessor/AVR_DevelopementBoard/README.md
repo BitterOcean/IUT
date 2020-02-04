@@ -66,6 +66,14 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 
 ![3D_PCB](https://user-images.githubusercontent.com/60509979/73701493-030cd980-46ff-11ea-999a-e6252d83f6e6.gif)
 
+### SOLDERING
+
+| 1   |  2  |
+| --- | --- |
+| ![2sec](https://user-images.githubusercontent.com/60509979/73782489-6ce0be00-47a7-11ea-9bad-eb3b6031a25e.gif) | ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/60509979/73783102-57b85f00-47a8-11ea-8d0d-16e306b0d434.gif) |  
+
+for more videos see <a href="https://www.aparat.com/v/IBJ4O">This Link</a>
+
 
 ## **DOWNLOAD**
 
