@@ -30,9 +30,9 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 - [IMAGES](#IMAGES)
 - [PCB](#PCB)
 - [DOWNLOAD](#DOWNLOAD)
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/PCB1.PcbDoc">Download PCB file</a>
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/DevelopmentBoard.pdf">Download PDF file</a>
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/AVR_DevelopementBoard.zip">Download the whole repository as a compressed file(.zip)</a>
+  - <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/PCB1.PcbDoc">Download PCB file</a>
+  - <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/DevelopmentBoard.pdf">Download PDF file</a>
+  - <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/AVR_DevelopementBoard.zip">Download the whole repository as a compressed file(.zip)</a>
 - [SUPPOERT](#SUPPOERT)
 - [LICENSE](#LICENSE)
 
@@ -68,12 +68,15 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 
 
 ## **DOWNLOAD**
-- <a href="https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/DevelopmentBoard.pdf">Download this file as a PDF</a>
 
-- <a href="https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/PCB1.PcbDoc">Download PCB1.PcbDoc file</a></br>
-:triangular_flag_on_post: You can use <a href="https://www.altium.com/viewer/">This Link</a>  to open it online!  :wink:  
+- <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/PCB1.PcbDoc">Download PCB1.PcbDoc file</a></br>
+:triangular_flag_on_post: You can use <a href="https://www.altium.com/viewer/">This Link</a>  to open it online!  :wink: 
 
-- <a href="https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/AVR_DevelopementBoard.zip">Download the whole repository as a compressed file(.zip)</a>
+
+- <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/DevelopmentBoard.pdf">Download this file as a PDF</a>
+
+
+- <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/AVR_DevelopementBoard.zip">Download the whole repository as a compressed file(.zip)</a>
 
 ## **SUPPOERT**
 
