@@ -19,7 +19,7 @@ In this project, we built the classic snake game using Atmega32 and a 16x8 LED d
 - [COMPONENTS](#COMPONENTS)
 - [SCHEMATIC](#SCHEMATIC)
 - [DOWNLOAD](#DOWNLOAD)
-- [PROJJECT LOGS](#PROJJECT-LOGS)
+- [PROJECT LOGS](#PROJECT-LOGS)
   - [Tasks Done](#Tasks-Done)
   - [Tasks To Do](#Tasks-to-do)
   - [Tasks Completed](#Tasks-Completed)
@@ -65,7 +65,8 @@ The game starts with a 2-dot snake and the player can control the snake by 4 pus
 
 - <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/FinalProject/Atary.zip">Download the whole repository as a compressed file(.zip)</a>
 
-## **PROJJECT LOGS**
+
+## **PROJECT LOGS**
 
 ### Tasks Done
 
