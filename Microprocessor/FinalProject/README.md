@@ -62,14 +62,7 @@ The game starts with a 2-dot snake and the player can control the snake by 4 pus
 
 ## **DOWNLOAD**
 
-- <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/PCB1.PcbDoc">Download PCB1.PcbDoc file</a></br>
-:triangular_flag_on_post: You can use <a href="https://www.altium.com/viewer/">This Link</a>  to open it online!  :wink: 
-
-
-- <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/DevelopmentBoard.pdf">Download this file as a PDF</a>
-
-
-- <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/AVR_DevelopementBoard/AVR_DevelopementBoard.zip">Download the whole repository as a compressed file(.zip)</a>
+- <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/BitterOcean/IUT/blob/master/Microprocessor/FinalProject/Atary.zip">Download the whole repository as a compressed file(.zip)</a>
 
 ## **PROJJECT LOGS**
 
