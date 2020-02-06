@@ -14,15 +14,15 @@ In this project, we built the classic snake game using Atmega32 and a 16x8 LED d
 ---
 ## **Table of contents**
 - [DETAILS](#DETAILS)
-  - [Protocols/Services used in the project](#Protocols/Services_used_in_the_project:)
-  - [GAME ALGORITHM](#GAME_ALGORITHM)
+  - [Protocols/Services used in the project](#Protocols/Services-used-in-the-project)
+  - [GAME ALGORITHM](#Game-Algorithm)
 - [COMPONENTS](#COMPONENTS)
 - [SCHEMATIC](#SCHEMATIC)
 - [DOWNLOAD](#DOWNLOAD)
-- [PROJJECT LOGS](#PROJJECT_LOGS)
-  - [Tasks Done](#Tasks_Done)
-  - [Tasks To Do](#Tasks_to_do)
-  - [Tasks Completed](#Tasks_Completed)
+- [PROJJECT LOGS](#PROJJECT-LOGS)
+  - [Tasks Done](#Tasks-Done)
+  - [Tasks To Do](#Tasks-to-do)
+  - [Tasks Completed](#Tasks-Completed)
 - [SUPPOERT](#SUPPOERT)
 - [LICENSE](#LICENSE)
  
@@ -103,4 +103,5 @@ Reach out to me at one of the following places!
 ## **LICENSE**
 
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
 
