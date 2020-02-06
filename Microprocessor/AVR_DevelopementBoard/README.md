@@ -52,9 +52,11 @@ ATmega16/32 Development Board provides a very simple and cost effective platform
 </p>
 
 ## **IMAGES**
-<p align="center">
-  <img src="https://www.electronics-lab.com/wp-content/uploads/2015/08/C032.jpg">
-</p>
+
+| 1 | 2 |
+| - | - |
+| <img src="https://www.electronics-lab.com/wp-content/uploads/2015/08/C032.jpg" /> | <img src="https://user-images.githubusercontent.com/60509979/73968354-cde6ce00-492e-11ea-9d54-ec4247f80ab9.jpg" /> |
+
 
 ## **PCB**
 
