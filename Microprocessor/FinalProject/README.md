@@ -14,16 +14,16 @@ In this project, we built the classic snake game using Atmega32 and a 16x8 LED d
 ---
 ## **Table of contents**
 - [DETAILS](#DETAILS)
-  - [Protocols/Services used in the project](#Protocols/Services-used-in-the-project)
+  - [Protocols/Services used in the project](#Protocols-or-Services-used-in-the-project)
   - [GAME ALGORITHM](#Game-Algorithm)
 - [COMPONENTS](#COMPONENTS)
 - [SCHEMATIC](#SCHEMATIC)
 - [DOWNLOAD](#DOWNLOAD)
 - [PROJJECT LOGS](#PROJJECT-LOGS)
-  - [Tasks Done](#Tasks-Done:)
-  - [Tasks To Do](#Tasks-to-do:)
-  - [Tasks Completed](#Tasks-Completed:)
-  - [Ongoing tasks](#Ongoing-tasks:)
+  - [Tasks Done](#Tasks-Done)
+  - [Tasks To Do](#Tasks-to-do)
+  - [Tasks Completed](#Tasks-Completed)
+  - [Ongoing tasks](#Ongoing-tasks)
 - [SUPPOERT](#SUPPOERT)
 - [LICENSE](#LICENSE)
  
@@ -32,7 +32,7 @@ In this project, we built the classic snake game using Atmega32 and a 16x8 LED d
 The game starts with a 2-dot snake and the player can control the snake by 4 push buttons. The snake grows by one dot after eating the food and the player's score is incremented by one. The game continues until the snake eats itself after which the game is over and the player's score and the game highscore is shown. Also the game highscore is retrieved from EEPROM and updated if the the highscore is beaten.
 
 
-### Protocols/Services used in the project
+### Protocols or Services used in the project
 
 - SPI for LED Matrix interfacing.
 
@@ -67,19 +67,19 @@ The game starts with a 2-dot snake and the player can control the snake by 4 pus
 
 ## **PROJJECT LOGS**
 
-### Tasks Done:
+### Tasks Done
 
 - Completed the game logic(Snake.c file)
 
 - Wrote library to interface atmega32 with two serially connected 8x8 led matrices controlled by MAX2719 drivers (led_control.c file)
 
-### Tasks to do:
+### Tasks to do
 
 - Load highscore from eeprom
 
 - Interface accelerometer
 
-### Tasks Completed:
+### Tasks Completed
 
 -  Assembled the AVR with push buttons and the LED Dot Matrix.
 
@@ -87,7 +87,7 @@ The game starts with a 2-dot snake and the player can control the snake by 4 pus
 
 -  Worked on the basic game loop - wrote function definitions for snake and the board.
 
-### Ongoing tasks:
+### Ongoing tasks
 
 -  Working on displaying the player's score on 2 seven segment displays
 
