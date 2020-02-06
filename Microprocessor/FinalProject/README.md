@@ -20,14 +20,15 @@ In this project, we built the classic snake game using Atmega32 and a 16x8 LED d
 - [SCHEMATIC](#SCHEMATIC)
 - [DOWNLOAD](#DOWNLOAD)
 - [PROJJECT LOGS](#PROJJECT-LOGS)
-  - [Tasks Done](#Tasks-Done)
-  - [Tasks To Do](#Tasks-to-do)
-  - [Tasks Completed](#Tasks-Completed)
+  - [Tasks Done](#Tasks-Done:)
+  - [Tasks To Do](#Tasks-to-do:)
+  - [Tasks Completed](#Tasks-Completed:)
+  - [Ongoing tasks](#Ongoing-tasks:)
 - [SUPPOERT](#SUPPOERT)
 - [LICENSE](#LICENSE)
  
  
-## **DETAILS** :mag: 
+## **DETAILS** 
 The game starts with a 2-dot snake and the player can control the snake by 4 push buttons. The snake grows by one dot after eating the food and the player's score is incremented by one. The game continues until the snake eats itself after which the game is over and the player's score and the game highscore is shown. Also the game highscore is retrieved from EEPROM and updated if the the highscore is beaten.
 
 
