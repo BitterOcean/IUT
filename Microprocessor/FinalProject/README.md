@@ -15,7 +15,7 @@ In this project, we built the classic snake game using Atmega32 and a 16x8 LED d
 ## **Table of contents**
 - [DETAILS](#DETAILS)
   - [Protocols/Services used in the project](#Protocols-or-Services-used-in-the-project)
-  - [GAME ALGORITHM](#Game-Algorithm)
+  - [Game Algorithm](#Game-Algorithm)
 - [COMPONENTS](#COMPONENTS)
 - [SCHEMATIC](#SCHEMATIC)
 - [DOWNLOAD](#DOWNLOAD)
