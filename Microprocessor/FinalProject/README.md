@@ -4,7 +4,12 @@
 ![License](https://img.shields.io/packagist/l/doctrine/orm)
 ![platform](https://img.shields.io/badge/Atmega-32-orange)  
 
+![atari](https://user-images.githubusercontent.com/60509979/73966608-988cb100-492b-11ea-8964-3ac4cf88396e.jpg)
+
+
 In this project, we built the classic snake game using Atmega32 and a 16x8 LED dot matrix display.
+
+:movie_camera: **To see how it works , take a look at <a href="https://www.aparat.com/v/ALuwK">This Link</a>**
 
 ---
 ## **Table of contents**
@@ -13,7 +18,6 @@ In this project, we built the classic snake game using Atmega32 and a 16x8 LED d
   - [GAME ALGORITHM](#GAME_ALGORITHM)
 - [COMPONENTS](#COMPONENTS)
 - [SCHEMATIC](#SCHEMATIC)
-- [IMAGES](#IMAGES)
 - [DOWNLOAD](#DOWNLOAD)
 - [PROJJECT LOGS](#PROJJECT_LOGS)
   - [Tasks Done](#Tasks_Done)
@@ -23,7 +27,7 @@ In this project, we built the classic snake game using Atmega32 and a 16x8 LED d
 - [LICENSE](#LICENSE)
  
  
-## **DETAILS**
+## **DETAILS** :mag: 
 The game starts with a 2-dot snake and the player can control the snake by 4 push buttons. The snake grows by one dot after eating the food and the player's score is incremented by one. The game continues until the snake eats itself after which the game is over and the player's score and the game highscore is shown. Also the game highscore is retrieved from EEPROM and updated if the the highscore is beaten.
 
 
@@ -47,19 +51,14 @@ The game starts with a 2-dot snake and the player can control the snake by 4 pus
 ## **COMPONENTS**
 
 - 1 × AVR ATmega32 Microcontroller
-- 1 × 16x8 LED Dot Matrix
-- 1 × JoyStick Module
-- 1 × Buzzer 
+- 2 × 8x8 LED Dot Matrix Module
+- 4 × Push Button
 
 ## **SCHEMATIC**
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60509979/73698629-ed93b180-46f6-11ea-89c8-e4bcfc40483b.png">
+  <img src="https://user-images.githubusercontent.com/60509979/73965371-434fa000-4929-11ea-8931-e4a586ae2cae.png">
 </p>
 
-## **IMAGES**
-<p align="center">
-  <img src="https://www.electronics-lab.com/wp-content/uploads/2015/08/C032.jpg">
-</p>
 
 ## **DOWNLOAD**
 
