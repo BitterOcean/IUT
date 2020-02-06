@@ -86,7 +86,7 @@ The game starts with a 2-dot snake and the player can control the snake by 4 pus
 
 -  Worked on the basic game loop - wrote function definitions for snake and the board.
 
-Ongoing tasks:
+### Ongoing tasks:
 
 -  Working on displaying the player's score on 2 seven segment displays
 
