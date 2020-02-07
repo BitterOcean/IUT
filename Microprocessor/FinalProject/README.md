@@ -70,7 +70,7 @@ The game starts with a 2-dot snake and the player can control the snake by 4 pus
 
 ### Tasks Done
 
-- Completed the game logic(Snake.c file)
+- Completed the game logic(main.c file)
 
 - Wrote library to interface atmega32 with two serially connected 8x8 led matrices controlled by MAX2719 drivers (led_control.c file)
 
