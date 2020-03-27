@@ -7,7 +7,9 @@
 Author : Maryam Saeedmehr  
 Language : verilog
 
-![Q1](https://user-images.githubusercontent.com/60509979/77750066-c7c4c200-7040-11ea-98f2-fb53b5ef3243.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/60509979/77750066-c7c4c200-7040-11ea-98f2-fb53b5ef3243.png">
+</p>
 </br>  
 
 ## **Solution** :metal::sunglasses:
@@ -114,6 +116,15 @@ endmodule
 	end
 endmodule
   ```
+  
+## **Simulation**
+:one: Full Adder 1 bit
+![ScrQ1_1](https://user-images.githubusercontent.com/60509979/77751967-4d963c80-7044-11ea-9bd0-ef72c2aaf36e.PNG)
+
+   
+:two: Full Adder 8 bit
+![ScrQ1_2](https://user-images.githubusercontent.com/60509979/77752064-774f6380-7044-11ea-8d15-14255143bfe9.png)
+
 
 ## **SUPPOERT**
 
