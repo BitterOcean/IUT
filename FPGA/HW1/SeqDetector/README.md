@@ -4,8 +4,8 @@
 ![License](https://img.shields.io/packagist/l/doctrine/orm)
 ![language](https://img.shields.io/badge/language-verilog-orange)
 
-Author : Maryam Saeedmehr  
-Language : verilog
+`Author : Maryam Saeedmehr`   
+`Language : verilog`
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/60509979/77752672-a31f1900-7045-11ea-9eda-8bd3ad3f6cae.png">
