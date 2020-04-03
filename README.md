@@ -24,7 +24,7 @@ This repository contains all the courseworks (actually, ones I could get my hand
   - <a href="https://github.com/BitterOcean/IUT/tree/master/FPGA">FPGA</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/SW">Software Engineering</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/SWLab">Software Engineering Lab</a>
-  - <a href="https://github.com/BitterOcean/IUT/tree/master/Compiler">Compiler</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/compiler">Compiler</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/AI">Artificial Intelligence </a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/English">Technical language</a>
 - ## **Semister 1399_1** ![Term](https://img.shields.io/badge/Term-7-blue)
