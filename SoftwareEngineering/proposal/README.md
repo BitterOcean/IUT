@@ -125,8 +125,9 @@ this model helps us to publish the initial version of the project as soon as pos
 of the project, we can consult with the managers of the companies and new startups, and in addition to attracting
 them, we will know our customers better and provide new facilities for the project.
 - back-end with python language and Django framework
-- front-end javascript and React framework
-is going to Implement.
+- front-end javascript and React framework  
+
+is going to Implement.  
 (The use of django is due to its high speed and packages for analyzing Excel files. 
 React is also a popular javascript framework today that is very easy to work with due to its diverse libraries.)  
 
