@@ -196,6 +196,230 @@ endmodule
 ![scrQ1_3_1](https://user-images.githubusercontent.com/60509979/80210855-becc0e00-8649-11ea-9d7a-6bba2a8223a6.png)
 
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/60509979/80211315-bde7ac00-864a-11ea-99ce-0a942fe6b98b.png">
+</p>
+</br>   
+
+
+## **Solution** :metal::sunglasses:    
+
+- **PWM Generator**    
+```verilog
+module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg pwm_out=0);
+
+	reg [15:0] Low=0;
+	reg [15:0] High=0;
+	reg [15:0] HighCounter=0;
+	reg [15:0] LowCounter=0;
+	reg turn=1'bx;// "turn" decides when pwm_out should be 1 and when 0
+
+	always @(posedge clk)
+	begin
+
+		if (high_wr)
+		begin
+			High <= data_in;
+			HighCounter <= data_in;
+			turn <= 1;
+		end
+
+		if (low_wr) 
+		begin
+			Low <= data_in;
+			LowCounter <= data_in;
+		end
+
+	end
+
+	always @(posedge clk)
+	begin 
+		if (turn==1) 
+		begin : up
+			pwm_out <= 1;
+			if( HighCounter==1 )
+			begin 
+				HighCounter <= High;
+				turn <= 0;
+				disable up;
+			end
+			HighCounter <= HighCounter - 1 ;
+		end
+	end
+
+	always @(posedge clk)
+	begin 
+		if (turn==0) 
+		begin : down
+			pwm_out <= 0;
+			if( LowCounter==1 )
+			begin 
+				LowCounter <= Low;
+				turn <= 1;
+				disable down;
+			end
+			LowCounter <= LowCounter - 1 ;
+		end
+	end
+
+endmodule
+```
+:heavy_check_mark: 
+```verilog
+module pwm_generator_tb();
+	
+	reg clk=0;
+	reg high_wr=0;
+	reg low_wr=0;
+	reg [15:0] data_in = 0;
+	wire pwm_out;
+	reg [6:0] DutyCycle=0;
+
+	always #5 clk=~clk;
+
+	pwm_generator U1 (clk,high_wr,low_wr,data_in,pwm_out);
+	
+	initial begin
+		$monitor("High_write = %s , Low_write = %s , Data_in = %d ==>> Duty Cycle = %d percent",high_wr?"ON":"OFF",low_wr?"ON":"OFF",data_in,DutyCycle);
+		
+		#30	DutyCycle = 10;
+			data_in = 1;
+			high_wr = 1;
+		#10	high_wr = 0;
+		#5	data_in = 9;
+			low_wr = 1;
+		#10	low_wr = 0;
+
+
+		#200	DutyCycle = 50;
+			data_in = 5;
+			high_wr = 1;
+		#10	high_wr = 0;
+			low_wr = 1;
+		#10	low_wr = 0;
+
+		#200	DutyCycle = 90;
+			data_in = 9;
+			high_wr = 1;
+		#10	high_wr = 0;
+		#5	data_in = 1;
+			low_wr = 1;
+		#10	low_wr = 0;
+
+
+	end	
+	
+endmodule
+```  
+
+**Simulation**  
+
+![scrQ2_1](https://user-images.githubusercontent.com/60509979/80211441-01421a80-864b-11ea-83c4-04b50301e2fd.png)
+  
+  
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/60509979/80211530-233b9d00-864b-11ea-9d3b-fcb05c7cbc79.png">
+<img src="https://user-images.githubusercontent.com/60509979/80211566-32224f80-864b-11ea-974a-7582aa531d3b.png">
+</p>
+</br>   
+
+
+## **Solution** :metal::sunglasses:    
+
+- **PWM Detector**    
+```verilog
+module pwm_detector(input clk,pwm_in,high_read,low_read, output reg [15:0] data_out=16'bz);
+
+	reg [15:0] Low=0;
+	reg [15:0] High=0;
+	reg [15:0] HighCounter=0;
+	reg [15:0] LowCounter=0;
+
+	always @(posedge clk)
+	begin
+		if (pwm_in==1)
+		begin 
+			if(Low != LowCounter && HighCounter==0) Low <= LowCounter;
+			LowCounter <= 0; 
+			HighCounter <= HighCounter + 1; 
+		end
+
+		if(pwm_in==0)
+		begin 
+			if(High != HighCounter && LowCounter==0) High <= HighCounter;
+			HighCounter <= 0; 
+			LowCounter <= LowCounter + 1; 
+		end
+	end
+
+	always @(posedge clk)
+	begin 
+		if (high_read==1)
+			data_out <= High;
+
+		else if (low_read==1)
+			data_out <= Low;
+
+		else
+			data_out <= 16'bz;
+	end
+
+endmodule
+```  
+
+:heavy_check_mark: 
+```verilog
+module pwm_detector_tb();
+	
+	reg clk=0;
+	reg high_r=0;
+	reg low_r=0;
+	reg pwm_in=0;
+	wire [15:0] data_out;
+
+	always #5 clk=~clk;
+
+	always 
+	begin 
+		repeat (3) begin #10 pwm_in = 1; #50 pwm_in = 0; end
+		repeat (3) begin #50 pwm_in = 1; #10 pwm_in = 0; end
+		repeat (3) begin #30 pwm_in = 1; #30 pwm_in = 0; end
+	end
+
+	pwm_detector U1 (clk,pwm_in,high_r,low_r,data_out);
+	
+	initial begin
+		$monitor("%d : Data_Out = %d ==> %s ",$time ,data_out,high_r?"High Value":(low_r?"Low Value":"Not Set"));
+		
+		#30	high_r = 1;
+		#30	high_r = 0;
+			low_r = 1;
+
+		#30	low_r = 0;
+		#100	high_r = 1;
+		#30	high_r = 0;
+			low_r = 1;
+
+		#30	low_r = 0;
+		#120	high_r = 1;
+		#30	high_r = 0;
+			low_r = 1;
+		#30	low_r = 0;
+			high_r = 1;
+		#30	high_r = 0;
+
+	end	
+	
+endmodule
+```  
+
+**Simulation**  
+
+![scrQ2_2](https://user-images.githubusercontent.com/60509979/80211717-6f86dd00-864b-11ea-896a-db7e7a1d0090.png)
+
+
+
 ## **SUPPOERT**
 
 Reach out to me at one of the following places!
