@@ -71,6 +71,13 @@ endmodule
 ![scrQ1_1](https://user-images.githubusercontent.com/60509979/80210454-0bfbb000-8649-11ea-9dc4-90269a24c167.png)
    
    
+ 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/60509979/80210929-df946380-8649-11ea-8ae0-1dc83496459f.png">
+</p>
+</br>  
+
+## **Solution** :metal::sunglasses:    
 
 - **Day Counter**   
 
@@ -135,7 +142,13 @@ endmodule
 ![scrQ1_2_2](https://user-images.githubusercontent.com/60509979/80210700-6eed4700-8649-11ea-9170-b372752cadfe.png)
 
 
-  
+<p align="center">
+<img src="https://user-images.githubusercontent.com/60509979/80211000-0f436b80-864a-11ea-9fe7-647e0e1ba933.png">
+</p>
+</br>  
+
+## **Solution** :metal::sunglasses:    
+
 - **Stopwatch**  
 
 ```verilog
