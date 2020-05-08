@@ -1,23 +1,47 @@
 `timescale 1 us/100 ps // clk = 1 MHz
 
-module DayCounter_tb();
+module DayCounter_tb;
 
-	wire [5:0] second,minute;
-	wire [4:0] hour,day;
-	wire [3:0] month;
-	wire [6:0] year;
+	// Inputs
+	reg enable;
 	reg clk=0;
 	reg reset=1;
+	integer i;
 
-	DayCounter U1 (clk,reset,second,minute,hour,day,month,year);
+	// Outputs
+	wire [5:0] second;
+	wire [5:0] minute;
+	wire [4:0] hour;
+	wire [4:0] day;
+	wire [3:0] month;
+	wire [6:0] year;
 
-	initial begin
-		$monitor("RESET=%s , Date and Time : %d/%d/%d - %d:%d:%d",reset?"OFF":"ON",year,month,day,hour,minute,second);
+	// Instantiate the Unit Under Test (UUT)
+	DayCounter uut (
+		.enable(enable),
+		.clk(clk), 
+		.reset(reset), 
+		.second(second), 
+		.minute(minute), 
+		.hour(hour), 
+		.day(day), 
+		.month(month), 
+		.year(year)
+	);
 
-		#10 reset=0;
-		#5 reset=1;
-	end
-		
 	always #0.5 clk=~clk;
-
+	
+	initial begin
+	
+		for(i = 0 ; i < 4 ; i = i + 1 )
+		begin 
+			{enable,reset} = i;
+			#50;
+			$monitor("ENABLE=%s , RESET=%s , Date and Time : %d/%d/%d - %d:%d:%d",enable?"ON":"OFF",reset?"OFF":"ON",year,month,day,hour,minute,second);
+		end
+		#100;
+		$monitor("---------------------Simulation ENDs---------------------");
+		
+	end
+      
 endmodule
