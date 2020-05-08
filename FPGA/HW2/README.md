@@ -17,23 +17,36 @@ Language : verilog
 - **P Counter**  
 
 ```verilog
-module PCounter #(parameter MAX_SIZE = 7,parameter [MAX_SIZE-1:0] p = 59) (input clk, reset, output reg [MAX_SIZE-1:0] cnt_out=0 , output reg out=0);
+`timescale 1ns / 1ps
+
+module PCounter #(parameter MAX_SIZE = 7,parameter [MAX_SIZE-1:0] p = 59) (
+	input enable,
+	input clk, 
+	input reset, 
+	output reg [MAX_SIZE-1:0] cnt_out=0 , 
+	output reg out=0
+	);
 
 	always @(posedge clk,negedge reset)
 	begin : main
-		if (reset==0) 
-		begin
+		if (reset==0)
 			cnt_out <= 0;
-			disable main;
-		end
 
-		out <= 0;
-		if (cnt_out < p)
-			cnt_out <= cnt_out + 1;
 		else
 		begin
-			out <= 1;
-			cnt_out <= 0;
+			out <= 0;
+			if (enable==1)
+			begin
+				if (cnt_out < p)
+					cnt_out <= cnt_out + 1;
+				else
+				begin
+					out <= 1;
+					cnt_out <= 0;
+				end
+			end
+			else
+				disable main;																																					
 		end
 	end
 
@@ -42,28 +55,36 @@ endmodule
 :heavy_check_mark:   
 
 ```verilog
+`timescale 1ns / 1ps
+
 module PCounter_tb();
 
+	reg enable=0;
 	reg clk=0;
 	reg reset=0;
+	integer i;
 	wire [3:0] cnt_out;
 	wire out;
 
-	PCounter #(.MAX_SIZE(4),.p(10)) U1 (.clk(clk),.cnt_out(cnt_out),.out(out),.reset(reset));
+	always #5 clk = ~clk;
+
+	PCounter #(.MAX_SIZE(4),.p(10)) U1 (.enable(enable),.clk(clk),.cnt_out(cnt_out),.out(out),.reset(reset));
 
 	initial 
 	begin 
-		$monitor("RESER=%s Parameter=10 cnt_out=%d" ,reset?"OFF":"ON",cnt_out);
-
-		     reset = 1 ;
-		#70  reset = 0 ;
-		#50  reset = 1 ;
-		#100 reset = 0 ;
+	
+		for(i = 0 ; i < 4 ; i = i + 1 )
+		begin 
+			{enable,reset} = i;
+			#50;
+			$monitor("ENABLE=%s , RESER=%s Parameter=10 cnt_out=%d" ,enable?"ON":"OFF",reset?"OFF":"ON",cnt_out);
+		end
+		#100;
+		$monitor("----------------Simulation ENDs----------------");
 	end
 		
-	always #5 clk=~clk;
-
 endmodule
+
 ```  
 
 **Simulation**  
@@ -82,7 +103,19 @@ endmodule
 - **Day Counter**   
 
 ```verilog
-module DayCounter(input clk, reset, output [5:0] second,minute, output [4:0] hour,day, output[3:0] month, output [6:0] year);
+`timescale 1ns / 1ps
+
+module DayCounter(
+	input enable,
+	input clk,
+	input reset,
+	output [5:0] second,
+	output [5:0] minute,
+	output [4:0] hour,
+	output [4:0] day,
+	output [3:0] month,
+	output [6:0] year
+	);
 	// minute and second are maximum 59 => 6 bit
 	// hour is maximum 23 and day is maximum 29 => 5 bit
 	// month is maximum 11 => 4 bit
@@ -90,22 +123,22 @@ module DayCounter(input clk, reset, output [5:0] second,minute, output [4:0] hou
 	wire year_out,month_out,day_out,hour_out,min_out,sec_out;
 
 	//second
-	PCounter #(.MAX_SIZE(6),.p(59)) U0 (.clk(clk),.cnt_out(second),.out(sec_out),.reset(reset));
+	PCounter #(.MAX_SIZE(6),.p(59)) U0 (.enable(enable),.clk(clk),.cnt_out(second),.out(sec_out),.reset(reset));
 
 	//minute
-	PCounter #(.MAX_SIZE(6),.p(59)) U1 (.clk(sec_out),.cnt_out(minute),.out(min_out),.reset(reset));
+	PCounter #(.MAX_SIZE(6),.p(59)) U1 (.enable(enable),.clk(sec_out),.cnt_out(minute),.out(min_out),.reset(reset));
 
 	//hour
-	PCounter #(.MAX_SIZE(5),.p(23)) U2 (.clk(min_out),.cnt_out(hour),.out(hour_out),.reset(reset));
+	PCounter #(.MAX_SIZE(5),.p(23)) U2 (.enable(enable),.clk(min_out),.cnt_out(hour),.out(hour_out),.reset(reset));
 
 	//day
-	PCounter #(.MAX_SIZE(5),.p(29)) U3 (.clk(hour_out),.cnt_out(day),.out(day_out),.reset(reset));
+	PCounter #(.MAX_SIZE(5),.p(29)) U3 (.enable(enable),.clk(hour_out),.cnt_out(day),.out(day_out),.reset(reset));
 
 	//month
-	PCounter #(.MAX_SIZE(4),.p(11)) U4 (.clk(day_out),.cnt_out(month),.out(month_out),.reset(reset));
+	PCounter #(.MAX_SIZE(4),.p(11)) U4 (.enable(enable),.clk(day_out),.cnt_out(month),.out(month_out),.reset(reset));
 
 	//year
-	PCounter #(.MAX_SIZE(7),.p(99)) U5 (.clk(month_out),.cnt_out(year),.out(year_out),.reset(reset));
+	PCounter #(.MAX_SIZE(7),.p(99)) U5 (.enable(enable),.clk(month_out),.cnt_out(year),.out(year_out),.reset(reset));
 
 endmodule
 ```
@@ -113,27 +146,52 @@ endmodule
 ```verilog
 `timescale 1 us/100 ps // clk = 1 MHz
 
-module DayCounter_tb();
+module DayCounter_tb;
 
-	wire [5:0] second,minute;
-	wire [4:0] hour,day;
-	wire [3:0] month;
-	wire [6:0] year;
+	// Inputs
+	reg enable;
 	reg clk=0;
 	reg reset=1;
+	integer i;
 
-	DayCounter U1 (clk,reset,second,minute,hour,day,month,year);
+	// Outputs
+	wire [5:0] second;
+	wire [5:0] minute;
+	wire [4:0] hour;
+	wire [4:0] day;
+	wire [3:0] month;
+	wire [6:0] year;
 
-	initial begin
-		$monitor("RESET=%s , Date and Time : %d/%d/%d - %d:%d:%d",reset?"OFF":"ON",year,month,day,hour,minute,second);
+	// Instantiate the Unit Under Test (UUT)
+	DayCounter uut (
+		.enable(enable),
+		.clk(clk), 
+		.reset(reset), 
+		.second(second), 
+		.minute(minute), 
+		.hour(hour), 
+		.day(day), 
+		.month(month), 
+		.year(year)
+	);
 
-		#10 reset=0;
-		#5 reset=1;
-	end
-		
 	always #0.5 clk=~clk;
-
+	
+	initial begin
+	
+		for(i = 0 ; i < 4 ; i = i + 1 )
+		begin 
+			{enable,reset} = i;
+			#50;
+			$monitor("ENABLE=%s , RESET=%s , Date and Time : %d/%d/%d - %d:%d:%d",enable?"ON":"OFF",reset?"OFF":"ON",year,month,day,hour,minute,second);
+		end
+		#100;
+		$monitor("---------------------Simulation ENDs---------------------");
+		
+	end
+      
 endmodule
+
 ```
    
 **Simulation**  
@@ -152,42 +210,101 @@ endmodule
 - **Stopwatch**  
 
 ```verilog
-module Stopwatch(input clk, reset, start, stop, output [5:0] second,minute, output [4:0] hour,day, output[3:0] month, output [6:0] year);
+`timescale 1ns / 1ps
 
-wire Syncked_clk;
-and U0 (Syncked_clk , clk, start, ~stop);
-DayCounter U1 (Syncked_clk,reset,second,minute,hour,day,month,year);
+module Stopwatch(
+	input clk, 
+	input reset,
+	input start, 
+	input stop, 
+	output [5:0] second,
+	output [5:0] minute, 
+	output [4:0] hour,
+	output [4:0] day, 
+	output[3:0] month, 
+	output [6:0] year
+	);
+
+	reg enable=0;
+
+	DayCounter uu1(
+		.enable(enable),
+		.clk(clk),
+		.reset(reset),
+		.second(second),
+		.minute(minute),
+		.hour(hour),
+		.day(day),
+		.month(month),
+		.year(year)
+	);
+	
+	always @(posedge start or posedge stop)
+	begin
+	
+		if(start==1)
+			enable <= 1;
+		if(stop==1)
+			enable <= 0; // stop has a higher priority
+	
+	end
 
 endmodule
 ```
 :heavy_check_mark: 
 ```verilog
-`timescale 1 us/100 ps // clk = 1 MHz
+`timescale 1us / 1ps
 
-module Stopwatch_tb();
+module Stopwatch_tb;
 
-	wire [5:0] second,minute;
-	wire [4:0] hour,day;
-	wire [3:0] month;
-	wire [6:0] year;
+	// Inputs
 	reg clk=0;
 	reg reset=1;
 	reg start=0;
 	reg stop=0;
+	integer i;
 
-	Stopwatch U1 (clk,reset,start,stop,second,minute,hour,day,month,year);
+	// Outputs
+	wire [5:0] second;
+	wire [5:0] minute;
+	wire [4:0] hour;
+	wire [4:0] day;
+	wire [3:0] month;
+	wire [6:0] year;
 
-	initial begin
-		$monitor(" START : %s - RESET : %s - STOP : %s *** Stopwatch : %d/%d/%d - %d:%d:%d",start?"ON":"OFF",reset?"OFF":"ON",stop?"ON":"OFF",year,month,day,hour,minute,second);
-		#5  start=1; 
-		#10 reset=0;
-		#3  reset=1;
-		#20 stop=1;
-	end
-		
+	// Instantiate the Unit Under Test (UUT)
+	Stopwatch uut (
+		.start(start),
+		.stop(stop),
+		.clk(clk), 
+		.reset(reset), 
+		.second(second), 
+		.minute(minute), 
+		.hour(hour), 
+		.day(day), 
+		.month(month), 
+		.year(year)
+	);
+
+
 	always #0.5 clk=~clk;
 
+	initial begin
+
+		for(i = 0 ; i < 4 ; i = i + 1 )
+		begin 
+			{start,reset} = i;
+			#50;
+			$monitor("START : %s - RESET : %s - STOP : %s *** Stopwatch : %d/%d/%d - %d:%d:%d",start?"ON":"OFF",reset?"OFF":"ON",stop?"ON":"OFF",year,month,day,hour,minute,second);
+		end
+		#500;
+		stop = 1;
+		$monitor("---------------------Simulation ENDs---------------------");
+
+	end
+      
 endmodule
+
 ```  
 
 
@@ -206,7 +323,15 @@ endmodule
 
 - **PWM Generator**    
 ```verilog
-module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg pwm_out=0);
+`timescale 1ns / 1ps
+
+module pwm_generator (
+	input clk,
+	input high_wr,
+	input low_wr, 
+	input [15:0] data_in, 
+	output reg pwm_out=0
+	);
 
 	reg [15:0] Low=0;
 	reg [15:0] High=0;
@@ -230,10 +355,6 @@ module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg
 			LowCounter <= data_in;
 		end
 
-	end
-
-	always @(posedge clk)
-	begin 
 		if (turn==1) 
 		begin : up
 			pwm_out <= 1;
@@ -245,10 +366,7 @@ module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg
 			end
 			HighCounter <= HighCounter - 1 ;
 		end
-	end
 
-	always @(posedge clk)
-	begin 
 		if (turn==0) 
 		begin : down
 			pwm_out <= 0;
@@ -260,26 +378,50 @@ module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg
 			end
 			LowCounter <= LowCounter - 1 ;
 		end
+
 	end
 
 endmodule
+
 ```
 :heavy_check_mark: 
 ```verilog
-module pwm_generator_tb();
-	
+`timescale 1ns / 1ps
+
+module pwm_generator_tb;
+
+	// Inputs
 	reg clk=0;
 	reg high_wr=0;
 	reg low_wr=0;
-	reg [15:0] data_in = 0;
+	reg [15:0] data_in=0;
+	reg [6:0] DutyCycle=7'bz;
+
+	// Outputs
 	wire pwm_out;
-	reg [6:0] DutyCycle=0;
+
+	// Instantiate the Unit Under Test (UUT)
+	pwm_generator uut (
+		.clk(clk), 
+		.high_wr(high_wr), 
+		.low_wr(low_wr), 
+		.data_in(data_in), 
+		.pwm_out(pwm_out)
+	);
 
 	always #5 clk=~clk;
 
-	pwm_generator U1 (clk,high_wr,low_wr,data_in,pwm_out);
-	
 	initial begin
+		// Initialize Inputs
+		clk = 0;
+		high_wr = 0;
+		low_wr = 0;
+		data_in = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+        
+		// Add stimulus here
 		$monitor("High_write = %s , Low_write = %s , Data_in = %d ==>> Duty Cycle = %d percent",high_wr?"ON":"OFF",low_wr?"ON":"OFF",data_in,DutyCycle);
 		
 		#30	DutyCycle = 10;
@@ -305,11 +447,11 @@ module pwm_generator_tb();
 		#5	data_in = 1;
 			low_wr = 1;
 		#10	low_wr = 0;
-
-
-	end	
-	
+		
+	end
+      
 endmodule
+
 ```  
 
 **Simulation**  
@@ -329,7 +471,15 @@ endmodule
 
 - **PWM Detector**    
 ```verilog
-module pwm_detector(input clk,pwm_in,high_read,low_read, output reg [15:0] data_out=16'bz);
+`timescale 1ns / 1ps
+
+module pwm_detector(
+	input clk,
+	input pwm_in,
+	input high_read,
+	input low_read, 
+	output reg [15:0] data_out=16'bz
+	);
 
 	reg [15:0] Low=0;
 	reg [15:0] High=0;
@@ -370,13 +520,27 @@ endmodule
 
 :heavy_check_mark: 
 ```verilog
-module pwm_detector_tb();
-	
+`timescale 1ns / 1ps
+
+module pwm_detector_tb;
+
+	// Inputs
 	reg clk=0;
-	reg high_r=0;
-	reg low_r=0;
 	reg pwm_in=0;
+	reg high_read=0;
+	reg low_read=0;
+
+	// Outputs
 	wire [15:0] data_out;
+
+	// Instantiate the Unit Under Test (UUT)
+	pwm_detector uut (
+		.clk(clk), 
+		.pwm_in(pwm_in), 
+		.high_read(high_read), 
+		.low_read(low_read), 
+		.data_out(data_out)
+	);
 
 	always #5 clk=~clk;
 
@@ -387,9 +551,17 @@ module pwm_detector_tb();
 		repeat (3) begin #30 pwm_in = 1; #30 pwm_in = 0; end
 	end
 
-	pwm_detector U1 (clk,pwm_in,high_r,low_r,data_out);
-	
 	initial begin
+		// Initialize Inputs
+		clk = 0;
+		pwm_in = 0;
+		high_read = 0;
+		low_read = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+        
+		// Add stimulus here
 		$monitor("%d : Data_Out = %d ==> %s ",$time ,data_out,high_r?"High Value":(low_r?"Low Value":"Not Set"));
 		
 		#30	high_r = 1;
@@ -408,10 +580,11 @@ module pwm_detector_tb();
 		#30	low_r = 0;
 			high_r = 1;
 		#30	high_r = 0;
-
-	end	
-	
+		
+	end
+      
 endmodule
+
 ```  
 
 **Simulation**  
