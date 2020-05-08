@@ -1,4 +1,12 @@
-module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg pwm_out=0);
+`timescale 1ns / 1ps
+
+module pwm_generator (
+	input clk,
+	input high_wr,
+	input low_wr, 
+	input [15:0] data_in, 
+	output reg pwm_out=0
+	);
 
 	reg [15:0] Low=0;
 	reg [15:0] High=0;
@@ -22,10 +30,6 @@ module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg
 			LowCounter <= data_in;
 		end
 
-	end
-
-	always @(posedge clk)
-	begin 
 		if (turn==1) 
 		begin : up
 			pwm_out <= 1;
@@ -37,10 +41,7 @@ module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg
 			end
 			HighCounter <= HighCounter - 1 ;
 		end
-	end
 
-	always @(posedge clk)
-	begin 
 		if (turn==0) 
 		begin : down
 			pwm_out <= 0;
@@ -52,6 +53,7 @@ module pwm_generator (input clk,high_wr,low_wr, input [15:0] data_in, output reg
 			end
 			LowCounter <= LowCounter - 1 ;
 		end
+
 	end
 
 endmodule
