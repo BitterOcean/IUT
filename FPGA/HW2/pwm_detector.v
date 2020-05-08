@@ -1,4 +1,12 @@
-module pwm_detector(input clk,pwm_in,high_read,low_read, output reg [15:0] data_out=16'bz);
+`timescale 1ns / 1ps
+
+module pwm_detector(
+	input clk,
+	input pwm_in,
+	input high_read,
+	input low_read, 
+	output reg [15:0] data_out=16'bz
+	);
 
 	reg [15:0] Low=0;
 	reg [15:0] High=0;
