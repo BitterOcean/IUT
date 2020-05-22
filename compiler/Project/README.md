@@ -30,12 +30,15 @@ A program will be given to your code in the language that will be described. If 
 the lexical rules of the programming language, you must print the tokens of the program at the output, 
 otherwise a proper error must be generated without producing any token.  
 
-For more details : [firstPart.pdf](https://github.com/BitterOcean/IUT/files/4668399/firstPart.pdf)
+For more details : [firstPart.pdf](https://github.com/BitterOcean/IUT/files/4668399/firstPart.pdf)  
+
+Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Project/FirstPhase/TestCase">/TestCase</a>
+
 
 
 ## **DOWNLOAD**  
 <p>
-&nbsp;&nbsp;:small_orange_diamond: First phase : <a href=""></a>
+&nbsp;&nbsp;:small_orange_diamond: First phase : <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/FirstPhase/LexAnalyzer.l">LexAnalyzer.l</a>
 </P>
 
 ## **SUPPOERT**
