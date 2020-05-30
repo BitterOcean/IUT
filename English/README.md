@@ -16,16 +16,14 @@
 
 
 ## **Your Paper in CS**  
-<I> send me a text relevant to the field of computer engineering </I>  
+> send me a text relevant to the field of computer engineering 
 
 :heavy_check_mark: My Answeres : [deepfake.pdf](https://github.com/BitterOcean/IUT/files/4335498/deepfake.pdf)
 
 ## **A Cloze Passage**  
-<I>
-  Dear all students,
-
-Please read the cloze passage and then answer the questions. Thank you!  
-[Cloze passage.pdf](https://github.com/BitterOcean/IUT/files/4706228/Cloze.passage.pdf)
+> Dear all students,
+> Please read the cloze passage and then answer the questions. Thank you!  
+> [Cloze passage.pdf](https://github.com/BitterOcean/IUT/files/4706228/Cloze.passage.pdf)
 
 </I>
 
