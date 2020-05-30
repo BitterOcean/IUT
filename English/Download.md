@@ -53,7 +53,6 @@ My Answeres : <a href="https://github.com/BitterOcean/IUT/files/4706208/Question
 Dear all  students,
 
 Please go through the attached text and then prepare 1o questions based on  it, along with answers. Then send it to me by e-mail: h.jalali@cc.iut.ac.ir. Thank you!  
-
 [biochemical computers.pdf](https://github.com/BitterOcean/IUT/files/4706197/biochemical.computers.pdf)  
 
 </I>  
