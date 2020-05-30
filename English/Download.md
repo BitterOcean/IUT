@@ -16,25 +16,56 @@
 
 
 ## **Your Paper in CS**  
+<I> send me a text relevant to the field of computer engineering </I>  
 
-[deepfake.pdf](https://github.com/BitterOcean/IUT/files/4335498/deepfake.pdf)
+:heavy_check_mark: My Answeres : [deepfake.pdf](https://github.com/BitterOcean/IUT/files/4335498/deepfake.pdf)
 
-## **A Cloze Passage**
+## **A Cloze Passage**  
+<I>
+  Dear all students,
+
+Please read the cloze passage and then answer the questions. Thank you!  
+[Cloze passage.pdf](https://github.com/BitterOcean/IUT/files/4706228/Cloze.passage.pdf)
+
+</I>
 
 
-## **Chapter8**
+## **Chapter8**  
+<I>
+  Please read chapter 8 in the book attached and then write a review on it. Thank you!  
+  
+  [Louis Scharf A First Course in Electrical and Computer Engineering  .pdf](https://github.com/BitterOcean/IUT/files/4706226/Louis.Scharf.A.First.Course.in.Electrical.and.Computer.Engineering.pdf)
+
+</I>
 
 
 ## **A Critical Summary**
-
+<I>
+  Please go through chapter 6 (planning with certainty) of the attached book and then prepare a critical summary of it. A critical summary is both descriptive and evaluative. It gives both information contained in a text and also provides an assessment of it. Your summary should not be less than 500 words.Thank you!  
+  
+  [chapter 6 of a book.pdf](https://github.com/BitterOcean/IUT/files/4706225/chapter.6.of.a.book.pdf)
+</I>
 
 ## **A Passage**
-
+<I>
+  Please go through the attached passage and then prepare 7 multiple-choice questions based on it (questions with four answers, a,b,c,d, along with the correct answer. Thank you!  
+  
+  [The Internet of medical things.pdf](https://github.com/BitterOcean/IUT/files/4706223/The.Internet.of.medical.things.pdf)
+</I>
 
 ## **A Presentation**
+<I>
+Dear all students,
+Please prepare a 10-minute presentation about of one of the popular topics in your field. Please note that you should not read from a text or script.  You search for a topic and then prepare for the presentation. your presentation can be  only audio or a combination of video and sound. Also, you should send a file representing your slides (powerpoint file). Thank you 
+</I>
 
+## **A Paper in Your Field**  
+<I>
+  Dear all students,
 
-## **A Paper in Your Field**
+  In the attachment, there is a paper relevant to your field. Please read it well and then prepare 10 questions based on along with answers. Thank you!  
+  [a paper.pdf](https://github.com/BitterOcean/IUT/files/4706221/a.paper.pdf)
+</I>
 
 
 ## **A Questionnaire**  
@@ -43,7 +74,7 @@
   please fill in the <a href="https://forms.gle/j2KitzCS3tYWRkkEA">questionnaire</a> and then send it to my e-mail (h.jalali@cc.iut.ac.ir). Thank you
 </I>  
 
-My Answeres : <a href="https://github.com/BitterOcean/IUT/files/4706208/Questionnaire_Maryam_Saeedmehr.pdf">Questionnaire_Maryam_Saeedmehr.pdf</a>
+:heavy_check_mark: My Answeres : <a href="https://github.com/BitterOcean/IUT/files/4706208/Questionnaire_Maryam_Saeedmehr.pdf">Questionnaire_Maryam_Saeedmehr.pdf</a>
 
 
 ## **A Text**   
@@ -56,7 +87,7 @@ Please go through the attached text and then prepare 1o questions based on  it, 
 
 </I>  
 
-My Answeres : [Questions.pdf](https://github.com/BitterOcean/IUT/files/4706193/Questions.pdf)
+:heavy_check_mark: My Answeres : [Questions.pdf](https://github.com/BitterOcean/IUT/files/4706193/Questions.pdf)
 
 
 ## **SUPPOERT**
