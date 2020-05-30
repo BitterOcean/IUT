@@ -13,7 +13,6 @@
 - [A Questionnaire](#A-Questionnaire)
 - [A Text](#A-Text)
 - [SUPPOERT](#SUPPOERT)
-- [LICENSE](#LICENSE)
 
 
 ## **Your Paper in CS**  
@@ -65,9 +64,4 @@ My Answeres : [Questions.pdf](https://github.com/BitterOcean/IUT/files/4706193/Q
 Reach out to me at one of the following places!
 
 - Telegram at <a href="https://t.me/BitterOcean" target="_blank">@BitterOcean</a>
-- Gmail at <a href="mailto:maryamsaeedmehr@gmail.com" target="_blank">maryamsaeedmehr@gmail.com</a>
-
-## **LICENSE**
-
-[![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
+- Gmail at <a href="mailto:maryamsaeedmehr@ec.iut.ac.ir" target="_blank">maryamsaeedmehr@ec.iut.ac.ir</a>
