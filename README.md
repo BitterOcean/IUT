@@ -22,8 +22,7 @@ This repository contains all the courseworks (actually, ones I could get my hand
 - ## **Semister 1398_2** ![Term](https://img.shields.io/badge/Term-6-brightgreen)
   - <a href="https://github.com/BitterOcean/IUT/tree/master/Signal">Signal and Systems</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/FPGA">FPGA</a>
-  - <a href="https://github.com/BitterOcean/IUT/tree/master/SoftwareEngineering">Software Engineering</a>
-  - <a href="https://github.com/BitterOcean/IUT/tree/master/SWLab">Software Engineering Lab</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/SoftwareEngineering">Software Engineering and Lab</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/compiler">Compiler</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/English">Technical language</a>
 - ## **Semister 1399_1** ![Term](https://img.shields.io/badge/Term-7-blue)
