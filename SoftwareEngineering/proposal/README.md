@@ -69,11 +69,15 @@ that buys a one-year account, the profitability of the site begins.
 
 ## **Work packages** 
 
-The project can be divided into two main parts:  
-    1. Management of corporate accounts  
-    2. Processing files and issuing legal receipts  
-The first part includes registration and time management and the number of employees of companies.  
-The second part, which is the main part of the work, is the method of receiving, processing and presenting files.
+According to the main roles of the system, which are "manager" and "employee", we have the following workpackages:
+  1. Search: The ability to search employee and company information in system database
+  2. login: The ability for employees and managers to enter as the main roles of the system
+  3. Display information: Possibility of graphical presentation of payslips in employee communication and presentation of graphs of statistical analysis
+  4. Payslip management: Possibility of uploading monthly payslip information by manager, in two ways:  
+    - "Manual entry of information" in pre-prepared forms inside the site or  
+    - "Upload past files in Excel format" and also the ability to edit and delete them  
+  5. Employee Management: The ability to add employees manually or with files as well as the ability to delete and edit employees' information
+  6. Management of Payslips' forms: Ability to delete, add and edit legal receipt fields
 
 
 ## **Future work**  
@@ -124,13 +128,8 @@ during the implementation of the original plan using the feedback of the users. 
 this model helps us to publish the initial version of the project as soon as possible. During the implementation
 of the project, we can consult with the managers of the companies and new startups, and in addition to attracting
 them, we will know our customers better and provide new facilities for the project.
-- back-end with python language and Django framework
-- front-end javascript and React framework  
-
-is going to Implement.  
-(The use of django is due to its high speed and packages for analyzing Excel files. 
-React is also a popular javascript framework today that is very easy to work with due to its diverse libraries.)  
-
+The first phase of the project includes the core system and its basic and essential features, including: almost complete implementation of search modules, login, payroll management, employee management, form management and display of information and statistical reports.
+In the next phases, the possibility of Massage Passing between the employee and the manager will be added to the system.
 
 ## **Dangers**  
 
