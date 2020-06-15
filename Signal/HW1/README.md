@@ -1,4 +1,4 @@
-# Signal and Systems , Homework 1 
+# Signal and Systems , Homework 1 ( Introduction to Signal and System)
 
 <img align="right" src="https://user-images.githubusercontent.com/60509979/75113935-4f489b00-5667-11ea-828f-2e132aedc645.png">
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
