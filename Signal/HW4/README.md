@@ -1,4 +1,4 @@
-# Signal and Systems , Homework 4  (Continuous-Time Fourier Transform)
+# Signal and Systems , Homework 4  (Continuous-Time Fourier Transform - Part 1)
 
 **Questions :**   
 <a href="https://github.com/BitterOcean/IUT/files/4668272/Signal_HW4.pdf">Signal_HW4_982.pdf</a>  
