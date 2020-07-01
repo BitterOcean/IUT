@@ -24,9 +24,10 @@
 ## **A Cloze Passage**  
 > Dear all students,
 > Please read the cloze passage and then answer the questions. Thank you!  
-> [Cloze passage.pdf](https://github.com/BitterOcean/IUT/files/4706228/Cloze.passage.pdf)
+> [Cloze passage.pdf](https://github.com/BitterOcean/IUT/files/4706228/Cloze.passage.pdf)  
 
-</I>
+:heavy_check_mark: My Answeres : [Cloze passage_MaryamSaeedmehr_9629373.pdf](https://github.com/BitterOcean/IUT/files/4859717/Cloze.passage_MaryamSaeedmehr_9629373.pdf)
+
 
 
 ## **Chapter8**  
