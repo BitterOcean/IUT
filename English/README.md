@@ -42,7 +42,10 @@
 
 ## **A Passage**
 > Please go through the attached passage and then prepare 7 multiple-choice questions based on it (questions with four answers, a,b,c,d, along with the correct answer. Thank you!  
-> [The Internet of medical things.pdf](https://github.com/BitterOcean/IUT/files/4706223/The.Internet.of.medical.things.pdf)
+> [The Internet of medical things.pdf](https://github.com/BitterOcean/IUT/files/4706223/The.Internet.of.medical.things.pdf)  
+
+:heavy_check_mark: My Answeres : [IoMT_MaryamSaeedmehr_9629373.pdf](https://github.com/BitterOcean/IUT/files/4868557/IoMT_MaryamSaeedmehr_9629373.pdf)
+
 
 
 ## **A Presentation**
