@@ -37,7 +37,9 @@
 
 ## **A Critical Summary**
 > Please go through chapter 6 (planning with certainty) of the attached book and then prepare a critical summary of it. A critical summary is both descriptive and evaluative. It gives both information contained in a text and also provides an assessment of it. Your summary should not be less than 500 words.Thank you!  
-> [chapter 6 of a book.pdf](https://github.com/BitterOcean/IUT/files/4706225/chapter.6.of.a.book.pdf)
+> [chapter 6 of a book.pdf](https://github.com/BitterOcean/IUT/files/4706225/chapter.6.of.a.book.pdf)  
+
+:heavy_check_mark: My Answeres : [CriticalSummary_MaryamSaeedmehr_9629373.pdf](https://github.com/BitterOcean/IUT/files/4874686/CriticalSummary_MaryamSaeedmehr_9629373.pdf)  
 
 
 ## **A Passage**
