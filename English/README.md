@@ -32,7 +32,10 @@
 
 ## **Chapter8**  
 > Please read chapter 8 in the book attached and then write a review on it. Thank you!  
-> [Louis Scharf A First Course in Electrical and Computer Engineering  .pdf](https://github.com/BitterOcean/IUT/files/4706226/Louis.Scharf.A.First.Course.in.Electrical.and.Computer.Engineering.pdf)
+> [Louis Scharf A First Course in Electrical and Computer Engineering  .pdf](https://github.com/BitterOcean/IUT/files/4706226/Louis.Scharf.A.First.Course.in.Electrical.and.Computer.Engineering.pdf)  
+
+:heavy_check_mark: My Answeres : [Summary-of-Ch8_MaryamSaeedmehr_9629373.pdf](https://github.com/BitterOcean/IUT/files/4875144/Summary-of-Ch8_MaryamSaeedmehr_9629373.pdf)
+
 
 
 ## **A Critical Summary**
