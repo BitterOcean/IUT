@@ -45,6 +45,11 @@ For more details : [secondPart.pdf](https://github.com/BitterOcean/IUT/files/504
 
 Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Project/SecondPhase/TestCase">/TestCase</a>
 
+### **Enjoy It !**
+
+![SecondPhase](https://user-images.githubusercontent.com/60509979/89718951-b620fd00-d9d8-11ea-98d5-8042e0127e1a.gif)
+
+
 
 ## **THIRD PHASE**  
 
@@ -53,6 +58,10 @@ You must write a program using bison, yacc and upload it to the LMS. Your progra
 For more details : [thirdPart.pdf](https://github.com/BitterOcean/IUT/files/5046126/thirdPart.pdf)  
 
 Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Project/ThirdPhase/TestCase">/TestCase</a>
+
+### **Enjoy It !**
+
+![ThirdPhase](https://user-images.githubusercontent.com/60509979/89718969-d81a7f80-d9d8-11ea-955e-d904ea6535bb.gif)
 
 
 
