@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/packagist/l/doctrine/orm)
 ![language](https://img.shields.io/badge/language-Bison-orange)  
 
-Author : Maryam Saeedmehr  
+Author : Maryam Saeedmehr & Sajede Nicknadaf 
 Language : Bison/Flex
 
 
@@ -87,8 +87,12 @@ Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Pro
 
 Reach out to me at one of the following places!
 
-- Telegram at <a href="https://t.me/BitterOcean" target="_blank">@BitterOcean</a>
-- Gmail at <a href="mailto:maryamsaeedmehr@gmail.com" target="_blank">maryamsaeedmehr@gmail.com</a>
+- Telegram at :
+  - <a href="https://t.me/BitterOcean" target="_blank">@BitterOcean</a>
+  - <a href="https://t.me/Sajede_nick" target="_blank">@Sajede_nick</a>
+- Gmail at :
+  - <a href="mailto:maryamsaeedmehr@gmail.com" target="_blank">maryamsaeedmehr@gmail.com</a>
+  - <a href="mailto:sajede.nicknadaf78@gmail.com" target="_blank">sajede.nicknadaf78@gmail.com</a>
 
 
 ## **LICENSE**
