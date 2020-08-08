@@ -37,6 +37,11 @@ For more details : [firstPart.pdf](https://github.com/BitterOcean/IUT/files/4668
 
 Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Project/FirstPhase/TestCase">/TestCase</a>
 
+### **Enjoy It !**
+
+![FirstPhase](https://user-images.githubusercontent.com/60509979/89719581-174bcf00-d9df-11ea-8a2c-f8b9e5f350d1.gif)
+
+
 
 ## **SECOND PHASE**  
 
@@ -70,6 +75,7 @@ Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Pro
 <p>
   &nbsp;&nbsp;:small_orange_diamond: <b>First phase :</b></br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/FirstPhase/LexAnalyzer.l">LexAnalyzer.l</a></br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/FirstPhase/Lex.sh">Lex.sh</a></br>
 </P>
 <p>
   &nbsp;&nbsp;:small_orange_diamond: <b>Second phase :</b></br>
