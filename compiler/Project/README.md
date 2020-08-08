@@ -11,6 +11,8 @@ Language : Bison/Flex
 ## **Table of contents**
 - [DETAILS](#DETAILS)
 - [FIRST PHASE](#FIRST-PHASE)
+- [SECOND PHASE](#SECOND-PHASE)
+- [THIRD PHASE](#THIRD-PHASE)
 - [DOWNLOAD](#DOWNLOAD)
 - [SUPPOERT](#SUPPOERT)
 - [LICENSE](#LICENSE)
@@ -35,10 +37,48 @@ For more details : [firstPart.pdf](https://github.com/BitterOcean/IUT/files/4668
 Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Project/FirstPhase/TestCase">/TestCase</a>
 
 
+## **SECOND PHASE**  
+
+A program will be given to your code in the language that will be described. If that program has complied with 
+the lexical rules of the programming language, you must print the tokens of the program at the output, 
+otherwise a proper error must be generated without producing any token.  
+
+For more details : [secondPart.pdf](https://github.com/BitterOcean/IUT/files/5046124/secondPart.pdf)
+
+Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Project/SecondPhase/TestCase">/TestCase</a>
+
+
+## **THIRD PHASE**  
+
+A program will be given to your code in the language that will be described. If that program has complied with 
+the lexical rules of the programming language, you must print the tokens of the program at the output, 
+otherwise a proper error must be generated without producing any token.  
+
+For more details : [thirdPart.pdf](https://github.com/BitterOcean/IUT/files/5046126/thirdPart.pdf)  
+
+Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Project/ThirdPhase/TestCase">/TestCase</a>
+
+
 
 ## **DOWNLOAD**  
 <p>
-&nbsp;&nbsp;:small_orange_diamond: First phase : <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/FirstPhase/LexAnalyzer.l">LexAnalyzer.l</a>
+  &nbsp;&nbsp;:small_orange_diamond: <b>First phase :</b>    
+  
+  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/FirstPhase/LexAnalyzer.l">LexAnalyzer.l</a>
+</P>
+<p>
+  &nbsp;&nbsp;:small_orange_diamond: <b>Second phase :</b>   
+  
+  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/SecondPhase/Compiler.l">Compiler.l</a>   
+  
+  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/SecondPhase/Compiler.y">Compiler.y</a>
+</P>
+<p>
+  &nbsp;&nbsp;:small_orange_diamond: <b>Third phase :</b>  
+  
+  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/ThirdPhase/Compiler.l">Compiler.l</a>  
+  
+  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/ThirdPhase/Compiler.y">Compiler.y</a>
 </P>
 
 ## **SUPPOERT**
@@ -47,6 +87,7 @@ Reach out to me at one of the following places!
 
 - Telegram at <a href="https://t.me/BitterOcean" target="_blank">@BitterOcean</a>
 - Gmail at <a href="mailto:maryamsaeedmehr@gmail.com" target="_blank">maryamsaeedmehr@gmail.com</a>
+
 
 ## **LICENSE**
 
