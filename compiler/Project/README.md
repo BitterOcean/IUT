@@ -67,27 +67,20 @@ Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Pro
 
 ## **DOWNLOAD**  
 <p>
-  &nbsp;&nbsp;:small_orange_diamond: <b>First phase :</b>    
-  
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/FirstPhase/LexAnalyzer.l">LexAnalyzer.l</a>
+  &nbsp;&nbsp;:small_orange_diamond: <b>First phase :</b></br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/FirstPhase/LexAnalyzer.l">LexAnalyzer.l</a></br>
 </P>
 <p>
-  &nbsp;&nbsp;:small_orange_diamond: <b>Second phase :</b>   
-  
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/SecondPhase/Compiler.l">Compiler.l</a>   
-  
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/SecondPhase/Compiler.y">Compiler.y</a>  
-  
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/SecondPhase/Compiler.sh">Compiler.sh</a>
+  &nbsp;&nbsp;:small_orange_diamond: <b>Second phase :</b></br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/SecondPhase/Compiler.l">Compiler.l</a></br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/SecondPhase/Compiler.y">Compiler.y</a></br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/SecondPhase/Compiler.sh">Compiler.sh</a></br>
 </P>
 <p>
-  &nbsp;&nbsp;:small_orange_diamond: <b>Third phase :</b>  
-  
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/ThirdPhase/Compiler.l">Compiler.l</a>  
-  
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/ThirdPhase/Compiler.y">Compiler.y</a>  
-  
-  - <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/ThirdPhase/Compiler.sh">Compiler.sh</a>
+  &nbsp;&nbsp;:small_orange_diamond: <b>Third phase :</b></br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/ThirdPhase/Compiler.l">Compiler.l</a></br>  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/ThirdPhase/Compiler.y">Compiler.y</a></br>  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_right: <a href="https://github.com/BitterOcean/IUT/blob/master/compiler/Project/ThirdPhase/Compiler.sh">Compiler.sh</a></br>
 </P>
 
 ## **SUPPOERT**
