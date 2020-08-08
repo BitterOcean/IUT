@@ -15,7 +15,7 @@ then
 	./a.out $FileName
 elif [ $Command == "--remove" ]
 then
-	rm Compiler.tab.c Compiler.tab.h lex.yy.c a.out
+	rm Compiler.tab.c Compiler.tab.h lex.yy.c a.out Output.asm
 	echo "All files removed :)"
 else
 	echo "Unkown command :| "
