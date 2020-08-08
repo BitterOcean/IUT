@@ -92,7 +92,7 @@ Testcases : <a href="https://github.com/BitterOcean/IUT/tree/master/compiler/Pro
 
 ## **SUPPOERT**
 
-Reach out to me at one of the following places!
+Reach out to us at one of the following places!
 
 - Telegram at :
   - <a href="https://t.me/BitterOcean" target="_blank">@BitterOcean</a>
