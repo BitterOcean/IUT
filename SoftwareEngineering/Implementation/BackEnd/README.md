@@ -12,7 +12,7 @@
 
 
 ## Zero Step
-- **1.**
+- **1.** Installing PostgreSQL on Ubuntu
   ```
   # Create the file repository configuration:
   sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -88,7 +88,7 @@
    python3 manage.py startapp ManagerManagement
    python3 manage.py startapp PayslipManagement
   ```
-- **7.** Copy and replace all files from here to yours
+- **7.** Copy and replace all files from here to your own folders
 - **8.**
   ```
   # used for django to connect postgresql 
@@ -122,8 +122,8 @@
   ```
   python manage.py runserver
   ```
-  and it will run on 127.0.0.1:8000
+  and it will start to work on localhost and port 8000. (mean that: <a href="http://127.0.0.1:8000">127.0.0.1:8000/</a>)
 
 ## How to see our tables from django ?
-  just take a look at 127.0.0.1:8000/admin/
+  just take a look at <a href="http://127.0.0.1:8000/admin/">127.0.0.1:8000/admin/</a>
   you have to enter your username and password that you have created in [First Step](#First-Step) part 9.
