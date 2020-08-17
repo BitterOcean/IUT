@@ -126,4 +126,4 @@
 
 ## How to see our tables from django ?
   just take a look at 127.0.0.1:8000/admin/
-  you have to enter your username and password that you have created in [First Step](##First-Step) part 9.
+  you have to enter your username and password that you have created in [First Step](#First-Step) part 9.
