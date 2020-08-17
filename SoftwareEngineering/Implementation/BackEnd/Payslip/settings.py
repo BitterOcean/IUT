@@ -93,9 +93,9 @@ WSGI_APPLICATION = 'Payslip.wsgi.application'
 DATABASES = {
     'default':{
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Payslip',
+        'NAME': 'payslip',
         'USER': 'postgres',
-        'PASSWORD': '7731',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432',
     }
