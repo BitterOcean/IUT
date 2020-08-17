@@ -106,6 +106,14 @@
   ```
   python3 manage.py createsuperuser
   ```
+- **10.** some security installation
+  ```
+  pip install django-cors-headers
+  ```
+  OR ...
+  ```
+  pip3 install django-cors-headers
+  ```
   
 ## Second Step
   ```
