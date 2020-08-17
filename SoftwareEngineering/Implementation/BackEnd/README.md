@@ -48,7 +48,14 @@
 
 ## First Step
 - **1.** create a folder named 'BackEnd'.
-- **2.** open the terminal there and :
+  <br/>open the terminal there and :
+  ```
+  # in the BackEnd folder :
+  mkdit src
+  # go back to BackEnd folder
+  cd .. 
+  ```
+- **2.** 
   ```
    virtualenv .
   ```
