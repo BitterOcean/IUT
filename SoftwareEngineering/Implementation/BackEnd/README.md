@@ -47,7 +47,7 @@
   to exit form psql.
 
 ## First Step
-- **1.** create a folder named 'Payslip'.
+- **1.** create a folder named 'BackEnd'.
 - **2.** open the terminal there and :
   ```
    virtualenv .
