@@ -51,7 +51,7 @@
   <br/>open the terminal there and :
   ```
   # in the BackEnd folder :
-  mkdit src
+  mkdir src
   # go back to BackEnd folder
   cd .. 
   ```
