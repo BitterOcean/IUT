@@ -1,0 +1,719 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: MIPS_Computer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPS_Computer.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPS_Computer"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : MIPS_Computer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\SignExtend.v" into library work
+Parsing module <SignExtend>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\RegisterFile.v" into library work
+Parsing module <RegisterFile>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Reg32.v" into library work
+Parsing module <Reg32>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Mux2x1_32.v" into library work
+Parsing module <Mux2x1_32>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\JumpAddress.v" into library work
+Parsing module <JumpAddress>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\JR_Controler.v" into library work
+Parsing module <JR_Controler>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\InstructionMem.v" into library work
+Parsing module <InstructionMem>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Incrementer32.v" into library work
+Parsing module <Incrementer32>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\DataMem.v" into library work
+Parsing module <DataMem>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Counter32.v" into library work
+Parsing module <Counter32>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Control.v" into library work
+Parsing module <Control>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\ALU_control.v" into library work
+Parsing module <ALU_control>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\ALU.v" into library work
+Parsing module <ALU32>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Add.v" into library work
+Parsing module <Add32>.
+Analyzing Verilog file "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\MIPS_Computer.v" into library work
+Parsing module <MIPS_Computer>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <MIPS_Computer>.
+
+Elaborating module <Reg32>.
+
+Elaborating module <Incrementer32>.
+
+Elaborating module <Add32>.
+
+Elaborating module <Mux2x1_32>.
+
+Elaborating module <Counter32>.
+
+Elaborating module <JR_Controler>.
+
+Elaborating module <JumpAddress>.
+
+Elaborating module <InstructionMem>.
+Reading initialization file \"instruction.mem\".
+WARNING:HDLCompiler:189 - "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\MIPS_Computer.v" Line 117: Size mismatch in connection of port <DataOut>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\MIPS_Computer.v" Line 131: Size mismatch in connection of port <DataIn1>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\MIPS_Computer.v" Line 132: Size mismatch in connection of port <DataIn2>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\MIPS_Computer.v" Line 134: Size mismatch in connection of port <DataOut>. Formal port size is 32-bit while actual signal size is 5-bit.
+
+Elaborating module <RegisterFile>.
+
+Elaborating module <Control>.
+
+Elaborating module <SignExtend>.
+
+Elaborating module <ALU32>.
+
+Elaborating module <ALU_control>.
+
+Elaborating module <DataMem>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MIPS_Computer>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\MIPS_Computer.v".
+    Summary:
+	no macro.
+Unit <MIPS_Computer> synthesized.
+
+Synthesizing Unit <Reg32>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Reg32.v".
+    Found 32-bit register for signal <DataOut>.
+    Summary:
+	no macro.
+Unit <Reg32> synthesized.
+
+Synthesizing Unit <Incrementer32>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Incrementer32.v".
+    Found 32-bit adder for signal <DataOut> created at line 21.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Incrementer32> synthesized.
+
+Synthesizing Unit <Add32>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Add.v".
+    Found 32-bit adder for signal <DataOut> created at line 22.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Add32> synthesized.
+
+Synthesizing Unit <Mux2x1_32>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Mux2x1_32.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux2x1_32> synthesized.
+
+Synthesizing Unit <Counter32>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Counter32.v".
+    Found 2-bit register for signal <DataOut>.
+    Found 2-bit adder for signal <DataOut[1]_GND_6_o_add_1_OUT> created at line 22.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <Counter32> synthesized.
+
+Synthesizing Unit <JR_Controler>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\JR_Controler.v".
+    Summary:
+	no macro.
+Unit <JR_Controler> synthesized.
+
+Synthesizing Unit <JumpAddress>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\JumpAddress.v".
+WARNING:Xst:647 - Input <PC2<27:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <JumpAddress> synthesized.
+
+Synthesizing Unit <InstructionMem>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\InstructionMem.v".
+WARNING:Xst:2999 - Signal 'ROM', unconnected in block 'InstructionMem', is tied to its initial value.
+    Found 32x32-bit single-port Read Only RAM <Mram_ROM> for signal <ROM>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <InstructionMem> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\RegisterFile.v".
+    Found 32x32-bit dual-port RAM <Mram_RegisterBank> for signal <RegisterBank>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   2 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <Control>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\Control.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <RegDst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Jump>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Link>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUsrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemtoReg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RegWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Branch>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUop<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 Latch(s).
+	inferred  19 Multiplexer(s).
+Unit <Control> synthesized.
+
+Synthesizing Unit <SignExtend>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\SignExtend.v".
+    Found 32-bit register for signal <DataOut>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <SignExtend> synthesized.
+
+Synthesizing Unit <ALU32>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\ALU.v".
+    Found 32-bit register for signal <Result>.
+    Found 32-bit subtractor for signal <DataIn1[31]_DataIn2[31]_sub_5_OUT> created at line 31.
+    Found 32-bit adder for signal <DataIn1[31]_DataIn2[31]_add_3_OUT> created at line 30.
+    Found 32-bit comparator greater for signal <DataIn1[31]_DataIn2[31]_LessThan_6_o> created at line 32
+    Found 32-bit comparator equal for signal <Zero> created at line 38
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <ALU32> synthesized.
+
+Synthesizing Unit <ALU_control>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\ALU_control.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <op<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 Latch(s).
+	inferred  11 Multiplexer(s).
+Unit <ALU_control> synthesized.
+
+Synthesizing Unit <DataMem>.
+    Related source file is "C:\Users\msaee\Documents\ISE14.7\MIPS_Phase3\DataMem.v".
+    Found 128x32-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <DataMem> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 128x32-bit single-port RAM                            : 1
+ 32x32-bit dual-port RAM                               : 2
+ 32x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 5
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 3
+ 2-bit register                                        : 1
+ 32-bit register                                       : 2
+# Latches                                              : 12
+ 1-bit latch                                           : 12
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 42
+ 1-bit 2-to-1 multiplexer                              : 30
+ 32-bit 2-to-1 multiplexer                             : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <PC_Selector_JR> is unconnected in block <MIPS_Computer>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <PC_Selector_Jump> is unconnected in block <MIPS_Computer>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Jump_Addr> is unconnected in block <MIPS_Computer>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <DataOut_15> in Unit <Sign_Extend> is equivalent to the following 16 FFs/Latches, which will be removed : <DataOut_16> <DataOut_17> <DataOut_18> <DataOut_19> <DataOut_20> <DataOut_21> <DataOut_22> <DataOut_23> <DataOut_24> <DataOut_25> <DataOut_26> <DataOut_27> <DataOut_28> <DataOut_29> <DataOut_30> <DataOut_31> 
+WARNING:Xst:1710 - FF/Latch <op_3> (without init value) has a constant value of 0 in block <ALU_Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Counter32>.
+The following registers are absorbed into counter <DataOut>: 1 register on signal <DataOut>.
+Unit <Counter32> synthesized (advanced).
+
+Synthesizing (advanced) Unit <InstructionMem>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ROM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Address>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <InstructionMem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MIPS_Computer>.
+INFO:Xst:3225 - The RAM <Data_Memory/Mram_RAM> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <MemWrite>      | high     |
+    |     addrA          | connected to signal <ALU_Result<6:0>> |          |
+    |     diA            | connected to signal <ReadData2>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 128-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <ALU/Operation[3]_DataIn1[31]_select_16_OUT<6:0>> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <MIPS_Computer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RegisterFile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RegisterBank> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <WriteReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ReadReg1>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RegisterBank1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <RegWrite>      | high     |
+    |     addrA          | connected to signal <WriteReg>      |          |
+    |     diA            | connected to signal <WriteData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ReadReg2>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RegisterFile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 128x32-bit dual-port block RAM                        : 1
+ 32x32-bit dual-port distributed RAM                   : 2
+ 32x32-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 73
+ 1-bit 2-to-1 multiplexer                              : 62
+ 32-bit 2-to-1 multiplexer                             : 11
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <op_3> (without init value) has a constant value of 0 in block <ALU_control>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <DataOut_15> in Unit <SignExtend> is equivalent to the following 16 FFs/Latches, which will be removed : <DataOut_16> <DataOut_17> <DataOut_18> <DataOut_19> <DataOut_20> <DataOut_21> <DataOut_22> <DataOut_23> <DataOut_24> <DataOut_25> <DataOut_26> <DataOut_27> <DataOut_28> <DataOut_29> <DataOut_30> <DataOut_31> 
+WARNING:Xst:2677 - Node <Registers/Mram_RegisterBank1> of sequential type is unconnected in block <MIPS_Computer>.
+WARNING:Xst:2677 - Node <Registers/Mram_RegisterBank2> of sequential type is unconnected in block <MIPS_Computer>.
+WARNING:Xst:2677 - Node <Registers/Mram_RegisterBank3> of sequential type is unconnected in block <MIPS_Computer>.
+WARNING:Xst:2677 - Node <Registers/Mram_RegisterBank4> of sequential type is unconnected in block <MIPS_Computer>.
+WARNING:Xst:2677 - Node <Registers/Mram_RegisterBank5> of sequential type is unconnected in block <MIPS_Computer>.
+WARNING:Xst:2677 - Node <Registers/Mram_RegisterBank62> of sequential type is unconnected in block <MIPS_Computer>.
+WARNING:Xst:2677 - Node <Registers/Mram_RegisterBank61> of sequential type is unconnected in block <MIPS_Computer>.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    op_2 in unit <ALU_control>
+    Branch in unit <Control>
+    RegDst in unit <Control>
+    ALUop_1 in unit <Control>
+    RegWrite in unit <Control>
+    MemtoReg in unit <Control>
+    ALUsrc in unit <Control>
+    Jump in unit <Control>
+    Link in unit <Control>
+
+
+Optimizing unit <SignExtend> ...
+
+Optimizing unit <MIPS_Computer> ...
+
+Optimizing unit <Control> ...
+
+Optimizing unit <ALU_control> ...
+WARNING:Xst:1710 - FF/Latch <ALU_Control_Unit/op_2> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ALU_Control_Unit/op_0> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ALU_Control_Unit/op_1> (without init value) has a constant value of 1 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Control_Unit/Link> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Control_Unit/ALUsrc> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Control_Unit/MemtoReg> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Control_Unit/RegWrite> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Control_Unit/ALUop_1> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Control_Unit/RegDst> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Control_Unit/Branch> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_0> (without init value) has a constant value of 1 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_1> (without init value) has a constant value of 1 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_2> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_3> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_4> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_5> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_6> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_7> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_8> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_9> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_10> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_11> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_12> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_13> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_14> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sign_Extend/DataOut_15> (without init value) has a constant value of 0 in block <MIPS_Computer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Control_Unit/Jump> of sequential type is unconnected in block <MIPS_Computer>.
+WARNING:Xst:2677 - Node <Data_Memory/Mram_RAM> of sequential type is unconnected in block <MIPS_Computer>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MIPS_Computer, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MIPS_Computer.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 5
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 34
+#      FD                          : 34
+# RAMS                             : 7
+#      RAM32M                      : 5
+#      RAM32X1D                    : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 130
+#      OBUF                        : 130
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              34  out of  11440     0%  
+ Number of Slice LUTs:                   27  out of   5720     0%  
+    Number used as Logic:                 3  out of   5720     0%  
+    Number used as Memory:               24  out of   1440     1%  
+       Number used as RAM:               24
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     52
+   Number with an unused Flip Flop:      18  out of     52    34%  
+   Number with an unused LUT:            25  out of     52    48%  
+   Number of fully used LUT-FF pairs:     9  out of     52    17%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         131
+ Number of bonded IOBs:                 131  out of    102   128% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 41    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.984ns (Maximum Frequency: 504.007MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.521ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.984ns (frequency: 504.007MHz)
+  Total number of paths / destination ports: 67 / 66
+-------------------------------------------------------------------------
+Delay:               1.984ns (Levels of Logic = 1)
+  Source:            Count/DataOut_0 (FF)
+  Destination:       Count/DataOut_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Count/DataOut_0 to Count/DataOut_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.650  Count/DataOut_0 (Count/DataOut_0)
+     INV:I->O              1   0.206   0.579  Count/Mcount_DataOut_xor<0>11_INV_0 (Result<0>)
+     FD:D                      0.102          Count/DataOut_0
+    ----------------------------------------
+    Total                      1.984ns (0.755ns logic, 1.229ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 34 / 33
+-------------------------------------------------------------------------
+Offset:              4.521ns (Levels of Logic = 2)
+  Source:            Count/DataOut_1 (FF)
+  Destination:       New_clk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Count/DataOut_1 to New_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.721  Count/DataOut_1 (Count/DataOut_1)
+     LUT2:I0->O            1   0.203   0.579  Count/NewClk<1>1 (New_clk_OBUF)
+     OBUF:I->O                 2.571          New_clk_OBUF (New_clk)
+    ----------------------------------------
+    Total                      4.521ns (3.221ns logic, 1.300ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.984|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.64 secs
+ 
+--> 
+
+Total memory usage is 4511456 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   60 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+
