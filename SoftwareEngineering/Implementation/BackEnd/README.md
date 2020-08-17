@@ -105,6 +105,11 @@
   ```
   pip3 install psycopg2==2.7.5
   ```  
+  if you got error installing this package , just try this :
+  ```
+  pipenv install psycopg2 --sequential
+  ```
+  
 - **9.** 
   ```
   python manage.py createsuperuser
