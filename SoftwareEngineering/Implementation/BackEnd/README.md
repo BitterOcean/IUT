@@ -125,5 +125,5 @@
   and it will start to work on localhost and port 8000. (mean that: <a href="http://127.0.0.1:8000">127.0.0.1:8000/</a>)
 
 ## How to see our tables from django ?
-  just take a look at <a href="http://127.0.0.1:8000/admin/">127.0.0.1:8000/admin/</a>
+  just take a look at <a href="http://127.0.0.1:8000/admin/">127.0.0.1:8000/admin/</a> <br/>
   you have to enter your username and password that you have created in [First Step](#First-Step) part 9.
