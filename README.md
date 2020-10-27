@@ -26,6 +26,10 @@ This repository contains all the courseworks (actually, ones I could get my hand
   - <a href="https://github.com/BitterOcean/IUT/tree/master/compiler">Compiler</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/English">English</a>
 - ## **Semister 1399_1** ![Term](https://img.shields.io/badge/Term-7-blue)
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/AI">Artificial Intelligence</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/Network2">Network 2</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/Database2">Database 2</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/MultiMedia">Multimedia</a>
 - ## **Semister 1399_2** ![Term](https://img.shields.io/badge/Term-8-purple)
 ---
 
