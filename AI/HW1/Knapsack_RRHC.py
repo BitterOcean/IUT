@@ -36,7 +36,6 @@ Enjoy it :)
 """
 import sys
 import time
-import math
 import random
 
 
@@ -70,10 +69,54 @@ class Problem:
 
 # Global Variables
 problem = Problem()
+All_Neighbors = []
+All_Neighbors_Val = []
+All_Neighbors_Weight = []
+Iteration = 1000
+
+
+def One_Flip_Neighborhood(current_state):
+    global All_Neighbors, All_Neighbors_Val, All_Neighbors_Weight
+    All_Neighbors = []
+    All_Neighbors_Val = []
+    All_Neighbors_Weight = []
+    for i in range(problem.Number_Of_Items):
+        neighbor = current_state[:]
+        neighbor[i] = abs(neighbor[i] - 1)
+        All_Neighbors.append(neighbor)
+
+
+def Evaluate(state):
+    state_val = 0
+    state_wight = 0
+    for i in range(problem.Number_Of_Items):
+        if state[i]:
+            if state_wight + problem.Item_List[i].Weight <= problem.Knapsack_Weight:
+                state_val = state_val + problem.Item_List[i].Value
+                state_wight = state_wight + problem.Item_List[i].Weight
+            else:
+                break
+    return [state_val, state_wight]
 
 
 def Random_Restart_Hill_Climbing():
-    pass
+    global problem, All_Neighbors, All_Neighbors_Val, All_Neighbors_Weight
+    for i in range(Iteration):
+        current_state = [random.randint(0, 1) for j in range(problem.Number_Of_Items)]
+        while True:
+            [current_eval, current_wight] = Evaluate(current_state)
+            One_Flip_Neighborhood(current_state)
+            for each_neighbor in All_Neighbors:
+                neighbor_eval = Evaluate(each_neighbor)
+                All_Neighbors_Val.append(neighbor_eval[0])
+                All_Neighbors_Weight.append(neighbor_eval[1])
+            if max(All_Neighbors_Val) > current_eval:
+                index = All_Neighbors_Val.index(max(All_Neighbors_Val))
+                current_state = All_Neighbors[index][:]
+            else:
+                break
+        if Evaluate(current_state)[0] > problem.Selected_Items_Value:
+            problem.Set_Value(current_state, current_wight, current_eval)
 
 
 def Read_File(file_name):
@@ -105,7 +148,7 @@ if __name__ == "__main__":
     Random_Restart_Hill_Climbing()
     end_time = time.time()
     runtime_duration = end_time - start_time
-    print("Maximum Value : {}, Maximum Weight : {}".format(problem.Selected_Items_Value, problem.Selected_Items_Weight))
+    print("Maximum Value : {}, Maximum Weight : {} out of {}".format(problem.Selected_Items_Value, problem.Selected_Items_Weight, problem.Knapsack_Weight))
     for item in problem.Selected_Items:
         print(item)
     print('Runtime Duration : {} s'.format(runtime_duration))
