@@ -21,13 +21,7 @@ Output Format : In the first line, print a natural number that represents the
                 that indicates the value of that variable.
 -------------------------------------------------------------------------------
 ? How to run it :
-~$ python3 MaxSAT_SA.py TestBench_File_Name_Or_Address
-
-* Example :
-    ~$ python3 MaxSAT_SA.py max-sat-20-80.txt
-    ~$ python3 MaxSAT_SA.py max-sat-20-90.txt
-    ~$ python3 MaxSAT_SA.py ./samples/max-sat-samples/max-sat-20-80.txt
-    ~$ python3 MaxSAT_SA.py ./samples/max-sat-samples/max-sat-20-90.txt
+~$ python3 MaxSAT_SA.py
 -------------------------------------------------------------------------------
 Author : Maryam Saeedmehr
 Std NO : 9629373

@@ -21,13 +21,7 @@ Output Format : In the first line, print two natural numbers that represents
                 of 0 or 1 that indicates that item is taken or not.
 -------------------------------------------------------------------------------
 ? How to run it :
-~$ python3 Knapsack_RRHC.py TestBench_File_Name_Or_Address
-
-* Example :
-    ~$ python3 Knapsack_RRHC.py knapsack-20.txt
-    ~$ python3 Knapsack_RRHC.py knapsack-100.txt
-    ~$ python3 Knapsack_RRHC.py ./samples/knapsack-samples/knapsack-20.txt
-    ~$ python3 Knapsack_RRHC.py ./samples/knapsack-samples/knapsack-100.txt
+~$ python3 Knapsack_RRHC.py
 -------------------------------------------------------------------------------
 Author : Maryam Saeedmehr
 Std NO : 9629373
@@ -48,7 +42,7 @@ class Problem:
     def __init__(self):
         self.Knapsack_Weight = 0
         self.Number_Of_Items = 0
-        self.Item_List = []
+        self.Item_List = []  # array of Item Objects.
         self.Selected_Items = []
         self.Selected_Items_Weight = 0
         self.Selected_Items_Value = 0
@@ -71,15 +65,14 @@ class Problem:
 problem = Problem()
 All_Neighbors = []
 All_Neighbors_Val = []
-All_Neighbors_Weight = []
 Iteration = 1000
 
 
 def One_Flip_Neighborhood(current_state):
-    global All_Neighbors, All_Neighbors_Val, All_Neighbors_Weight
+    global All_Neighbors, All_Neighbors_Val
+    # Used to reset this arrays for new neighbors
     All_Neighbors = []
     All_Neighbors_Val = []
-    All_Neighbors_Weight = []
     for i in range(problem.Number_Of_Items):
         neighbor = current_state[:]
         neighbor[i] = abs(neighbor[i] - 1)
@@ -87,6 +80,11 @@ def One_Flip_Neighborhood(current_state):
 
 
 def Evaluate(state):
+    """
+    input parameter 'state' is a binary array which indicates that
+    which items are token.
+    It will return the value and weight of this state.
+    """
     state_val = 0
     state_wight = 0
     for i in range(problem.Number_Of_Items):
@@ -94,44 +92,44 @@ def Evaluate(state):
             if state_wight + problem.Item_List[i].Weight <= problem.Knapsack_Weight:
                 state_val = state_val + problem.Item_List[i].Value
                 state_wight = state_wight + problem.Item_List[i].Weight
-            else:
-                break
     return [state_val, state_wight]
 
 
 def Random_Restart_Hill_Climbing():
-    global problem, All_Neighbors, All_Neighbors_Val, All_Neighbors_Weight
+    global problem, All_Neighbors, All_Neighbors_Val
     for i in range(Iteration):
-        current_state = [random.randint(0, 1) for j in range(problem.Number_Of_Items)]
+        current_state = [random.randint(0, 1) for i in range(problem.Number_Of_Items)]
         while True:
-            [current_eval, current_wight] = Evaluate(current_state)
+            """
+            This while loop is running Steepest Ascent version of Hill Climbing 
+            """
+            [current_val, current_wight] = Evaluate(current_state)
             One_Flip_Neighborhood(current_state)
             for each_neighbor in All_Neighbors:
-                neighbor_eval = Evaluate(each_neighbor)
+                neighbor_eval = Evaluate(each_neighbor)  # neighbor_eval = [neighbor_val, neighbor_weight]
                 All_Neighbors_Val.append(neighbor_eval[0])
-                All_Neighbors_Weight.append(neighbor_eval[1])
-            if max(All_Neighbors_Val) > current_eval:
+            if max(All_Neighbors_Val) > current_val:
                 index = All_Neighbors_Val.index(max(All_Neighbors_Val))
                 current_state = All_Neighbors[index][:]
             else:
                 break
-        if Evaluate(current_state)[0] > problem.Selected_Items_Value:
-            problem.Set_Value(current_state, current_wight, current_eval)
+        if current_val > problem.Selected_Items_Value:
+            problem.Set_Value(current_state, current_wight, current_val)
 
 
 def Read_File(file_name):
     """
     It sets up the problem in this way :
-    problem.Item_List is like [[item_n_val, item_n_wight], ..., [item_x_val, item_x_weight]].
+    problem.Item_List is like [[item0_val, item0_wight], ..., [item_n_val, item_n_weight]].
     It also sets problem.Number_of_Items and problem.Knapsack_Weight.
     """
     try:
         global problem
-        File_Item_List = list()
+        File_Item_List = []
         with open(file_name, "r") as infile:
             [Number_of_Items, Knapsack_Weight] = infile.readline().split(' ')
             for i in infile:
-                file_item = list()
+                file_item = []
                 for j in i.split(' '):
                     file_item.append(int(j.replace('\n', '')))
                 File_Item_List.append(file_item)
