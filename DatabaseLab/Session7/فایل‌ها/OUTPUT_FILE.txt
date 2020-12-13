@@ -1,0 +1,10 @@
+9,Australia
+6,Canada
+3,Central
+7,France
+8,Germany
+2,Northeast
+1,Northwest
+5,Southeast
+4,Southwest
+10,United Kingdom
