@@ -80,17 +80,20 @@ def color_change(I, w, new_color):
 # Test the function -----------------------------------------------------------
 img1 = cv.imread("berbatov.jpg")
 img2 = cv.imread("Hi.JPG")
-image = int(input('Which Image do you want to test?(Enter its number)\n1- berbatov\n2- Hi\n'))
-while image not in (1,2):
+img3 = cv.imread("color_change.jpg")
+image = int(input('Which Image do you want to test?(Enter its number)\n1- berbatov\n2- Hi\n3- color_change\n'))
+while image not in (1,2,3):
     print('Oops! Wrong number!')
-    image = int(input('Which Image do you want to test?(Enter its number)\n1- berbatov\n2- Hi\n'))
+    image = int(input('Which Image do you want to test?(Enter its number)\n1- berbatov\n2- Hi\n3- color_change\n'))
 
-w = int(input('Enter the range of color (just an integer): '))
-new_color = int(input('Enter the Hue of every new color you want: '))
+w = int(input('Enter the range of color (just a positive integer): '))
+new_color = int(input('Enter the Hue of every new color you want(an integer in range(0,179)): '))
 print('\nNow pick a color you want to replace just \nby clicking on somewhere with that color...')
 sleep(1.5)
 
 if image == 1:
     color_change(img1, w, new_color)
-else:
+elif image == 2:
     color_change(img2, w, new_color)
+else:
+    color_change(img3, w, new_color)
