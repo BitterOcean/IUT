@@ -1,0 +1,32 @@
+/*
+ * test 2:   Introduction to I/O ports(Complementary)
+ *
+ * Created:  3/7/2021 9:11:54 PM
+ * Author:   Maryam Saeedmehr
+ * Std.NO:   9629373
+ */
+
+#include "configuration.h"
+
+// Main Function ----------------------------------------------------------
+void main(void)
+{
+    // I/O configuration ---------------------
+    ioConfiguration(portA, input);
+    ioConfiguration(portB, output);
+    ioConfiguration(portC, output);
+    ioConfiguration(portD, inOut);
+
+    // flowchart ------------------------------
+    subRoutine1(portB, 2, 400);
+    subRoutine2(4, 3000); // start at PORTB.4
+    subRoutine4(up, segment1); /* your choices
+    are segment1 or segment2 or segment3 or
+    segment4 or allSegments*/
+    
+    while (1)
+    {
+        subRoutine3(portA, portB);
+        subRoutine5(1); // step size = 1*0.1
+    }
+}

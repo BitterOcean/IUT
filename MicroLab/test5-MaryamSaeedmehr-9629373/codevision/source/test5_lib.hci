@@ -1,0 +1,10 @@
+VERSION:3 SOURCE_TIMESTAMP:529194EE
+NODE:M LEVEL:0 LINE:9 "_TEST5_LIB_INCLUDED_"
+NODE:I LEVEL:0 LINE:12 "C:\cvavr\inc\mega16.h"
+NODE:I LEVEL:0 LINE:13 "C:\cvavr\inc\alcd.h"
+NODE:I LEVEL:0 LINE:14 "C:\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:15 "C:\cvavr\inc\stdint.h"
+NODE:I LEVEL:0 LINE:16 "C:\cvavr\BIN\test5\source\board_init.h"
+NODE:I LEVEL:0 LINE:17 "C:\cvavr\BIN\test5\source\subRoutines.h"
+NODE:M LEVEL:0 LINE:20 "Right"
+NODE:M LEVEL:0 LINE:21 "Left"

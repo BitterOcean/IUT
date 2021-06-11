@@ -1,0 +1,58 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+LCD_line1_template                                                                0x017E       2
+LCD_line2_parking_template                                                        0x0180       2
+LCD_line2_period_template                                                         0x0182       2
+which_one_is_clicked                                                              0x0184       1
+timer0_error_handler                                                              0x0185       1
+_base_y                                                                           0x0186       4
+_lcd_x                                                                            0x018A       1
+_lcd_y                                                                            0x018B       1
+_lcd_maxx                                                                         0x018C       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+houre                                                                             R5           1
+minute                                                                            R4           1
+second                                                                            R7           1
+hundredth_of_a_second                                                             R6           1
+parking_empty_capacity                                                            R9           1
+period                                                                            R8           1
+in_period                                                                         R10,R11      2
+temp                                                                              R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x000B8      3
+io_init                                                                           0x000BB     14
+timer_init                                                                        0x000C9     28
+interrupt_init                                                                    0x000E5     10
+board_init                                                                        0x00112      8
+map                                                                               0x0011A     57
+ext_int0_isr                                                                      0x00153      4
+ext_int1_isr                                                                      0x00157     27
+ext_int2_isr                                                                      0x00172      5
+timer0_ovf_isr                                                                    0x00177     47
+timer1_ovf_isr                                                                    0x001A6     56
+subRoutine1                                                                       0x001DE     27
+subRoutine2                                                                       0x001F9     45
+subRoutine3                                                                       0x00226     51
+put_buff_G100                                                                     0x00259     64
+_print_G100                                                                       0x00299    308
+sprintf                                                                           0x003CD     52
+_lcd_write_nibble_G101                                                            0x00401     20
+_lcd_write_data                                                                   0x00415     12
+lcd_gotoxy                                                                        0x00421     17
+lcd_clear                                                                         0x00432     14
+lcd_putchar                                                                       0x00440     32
+lcd_puts                                                                          0x00460     17
+lcd_init                                                                          0x00471     47
+strlen                                                                            0x004A0     12
+strlenf                                                                           0x004AC     13

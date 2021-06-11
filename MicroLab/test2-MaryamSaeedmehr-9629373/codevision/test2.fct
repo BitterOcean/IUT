@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"test2.c" LINE:12
+subRoutine1 DSTACK_USAGE:4 DSTACK_LEVEL:4 FILE:"source\subRoutines.c" LINE:53

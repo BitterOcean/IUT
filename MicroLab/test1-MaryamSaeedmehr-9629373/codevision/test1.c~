@@ -1,0 +1,17 @@
+/*
+ * test1.c
+ *
+ * Created: 3/2/2021 12:38:41 AM
+ * Author: Maryam
+ */
+
+#include <io.h>
+
+void main(void)
+{
+while (1)
+    {
+    // Please write your application code here
+
+    }
+}

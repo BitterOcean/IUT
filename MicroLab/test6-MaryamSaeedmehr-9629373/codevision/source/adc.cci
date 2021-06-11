@@ -1,0 +1,9 @@
+VERSION:3 SOURCE_TIMESTAMP:5297AE39
+NODE:I LEVEL:0 LINE:1 "C:\cvavr\BIN\test6\source\test6_lib.h"
+NODE:V LEVEL:0 LINE:3 "adc_data -> RAM:????"
+NODE:V LEVEL:0 LINE:4 "adc_data_copy -> RAM:????"
+NODE:F LEVEL:0 LINE:8 "adc_isr(void)"
+NODE:V LEVEL:0 LINE:9 "input_index_S0010000000 -> RAM:????"
+NODE:F LEVEL:0 LINE:24 "read_adc(unsigned char adc_input)"
+NODE:F LEVEL:0 LINE:37 "Q1_adc_init(void)"
+NODE:F LEVEL:0 LINE:48 "Q2_adc_init(void)"

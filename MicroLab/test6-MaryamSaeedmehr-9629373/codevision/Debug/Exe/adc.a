@@ -1,0 +1,154 @@
+; #include "test6_lib.h"
+;PCODE: $00000000 VOL: 0
+	#ifndef __SLEEP_DEFINED__
+;PCODE: $00000001 VOL: 0
+	#define __SLEEP_DEFINED__
+;PCODE: $00000002 VOL: 0
+	.EQU __se_bit=0x40
+;PCODE: $00000003 VOL: 0
+	.EQU __sm_mask=0xB0
+;PCODE: $00000004 VOL: 0
+	.EQU __sm_powerdown=0x20
+;PCODE: $00000005 VOL: 0
+	.EQU __sm_powersave=0x30
+;PCODE: $00000006 VOL: 0
+	.EQU __sm_standby=0xA0
+;PCODE: $00000007 VOL: 0
+	.EQU __sm_ext_standby=0xB0
+;PCODE: $00000008 VOL: 0
+	.EQU __sm_adc_noise_red=0x10
+;PCODE: $00000009 VOL: 0
+	.SET power_ctrl_reg=mcucr
+;PCODE: $0000000A VOL: 0
+	#endif
+;PCODE: $0000000B VOL: 0
+;PCODE: $0000000C VOL: 0
+;
+;uint16_t adc_data[LAST_ADC_INPUT-FIRST_ADC_INPUT+1];
+;uint16_t adc_data_copy[LAST_ADC_INPUT-FIRST_ADC_INPUT+1];
+;
+;// ADC interrupt service routine
+;// with auto input scanning
+;interrupt [ADC_INT] void adc_isr(void){
+; 0001 0008 interrupt [15] void adc_isr(void){
+
+	.CSEG
+;PCODE: $0000000D VOL: 0
+;PCODE: $0000000E VOL: 0
+; 0001 0009   static unsigned char input_index=0;
+; 0001 000A   // Read the AD conversion result
+; 0001 000B   adc_data[input_index]=ADCW;
+;PCODE: $0000000F VOL: 0
+;PCODE: $00000010 VOL: 0
+;PCODE: $00000011 VOL: 0
+;PCODE: $00000012 VOL: 0
+;PCODE: $00000013 VOL: 0
+;PCODE: $00000014 VOL: 0
+;PCODE: $00000015 VOL: 0
+; 0001 000C   // Select next ADC input
+; 0001 000D   if (++input_index > (LAST_ADC_INPUT-FIRST_ADC_INPUT)) {
+;PCODE: $00000016 VOL: 0
+;PCODE: $00000017 VOL: 0
+;PCODE: $00000018 VOL: 0
+;PCODE: $00000019 VOL: 0
+;PCODE: $0000001A VOL: 0
+; 0001 000E     input_index=0;
+;PCODE: $0000001B VOL: 0
+;PCODE: $0000001C VOL: 0
+; 0001 000F   }
+; 0001 0010   ADMUX=(FIRST_ADC_INPUT | ADC_VREF_TYPE)+input_index;
+;PCODE: $0000001D VOL: 0
+;PCODE: $0000001E VOL: 0
+;PCODE: $0000001F VOL: 0
+;PCODE: $00000020 VOL: 0
+; 0001 0011   // Delay needed for the stabilization of the ADC input voltage
+; 0001 0012   delay_us(10);
+;PCODE: $00000021 VOL: 0
+; 0001 0013   // Start the AD conversion
+; 0001 0014   ADCSRA|=(1<<ADSC);
+;PCODE: $00000022 VOL: 0
+;PCODE: $00000023 VOL: 0
+; 0001 0015 }
+;PCODE: $00000024 VOL: 0
+;PCODE: $00000025 VOL: 0
+;PCODE: $00000026 VOL: 0
+;
+;// Read the AD conversion result
+;unsigned int read_adc(unsigned char adc_input){
+; 0001 0018 unsigned int read_adc(unsigned char adc_input){
+;PCODE: $00000027 VOL: 0
+;PCODE: $00000028 VOL: 0
+; 0001 0019   ADMUX=adc_input | ADC_VREF_TYPE;
+;PCODE: $00000029 VOL: 0
+;	adc_input -> Y+0
+;PCODE: $0000002A VOL: 0
+;PCODE: $0000002B VOL: 0
+;PCODE: $0000002C VOL: 0
+; 0001 001A   // Delay needed for the stabilization of the ADC input voltage
+; 0001 001B   delay_us(10);
+;PCODE: $0000002D VOL: 0
+; 0001 001C   // Start the AD conversion
+; 0001 001D   ADCSRA|=(1<<ADSC);
+;PCODE: $0000002E VOL: 0
+;PCODE: $0000002F VOL: 0
+; 0001 001E   // Wait for the AD conversion to complete
+; 0001 001F   while ((ADCSRA & (1<<ADIF))==0);
+;PCODE: $00000030 VOL: 0
+;PCODE: $00000031 VOL: 0
+;PCODE: $00000032 VOL: 0
+;PCODE: $00000033 VOL: 0
+;PCODE: $00000034 VOL: 0
+;PCODE: $00000035 VOL: 0
+; 0001 0020   ADCSRA|=(1<<ADIF);
+;PCODE: $00000036 VOL: 0
+;PCODE: $00000037 VOL: 0
+; 0001 0021   return ADCW;
+;PCODE: $00000038 VOL: 0
+;PCODE: $00000039 VOL: 0
+;PCODE: $0000003A VOL: 0
+; 0001 0022 }
+;PCODE: $0000003B VOL: 0
+;
+;
+;void Q1_adc_init(){
+; 0001 0025 void Q1_adc_init(){
+;PCODE: $0000003C VOL: 0
+;PCODE: $0000003D VOL: 0
+; 0001 0026   // ADC initialization
+; 0001 0027   // ADC Clock frequency: 1000.000 kHz
+; 0001 0028   // ADC Voltage Reference: AREF pin
+; 0001 0029   // ADC Auto Trigger Source: ADC Stopped
+; 0001 002A   ADMUX=ADC_VREF_TYPE;
+;PCODE: $0000003E VOL: 0
+;PCODE: $0000003F VOL: 0
+; 0001 002B   ADCSRA=(1<<ADEN) | (0<<ADSC) | (1<<ADATE) | (0<<ADIF) | (0<<ADIE) | (0<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
+;PCODE: $00000040 VOL: 0
+;PCODE: $00000041 VOL: 0
+; 0001 002C   SFIOR=(0<<ADTS2) | (0<<ADTS1) | (0<<ADTS0);
+;PCODE: $00000042 VOL: 0
+;PCODE: $00000043 VOL: 0
+; 0001 002D }
+;PCODE: $00000044 VOL: 0
+;PCODE: $00000045 VOL: 0
+;
+;
+;void Q2_adc_init(){
+; 0001 0030 void Q2_adc_init(){
+;PCODE: $00000046 VOL: 0
+;PCODE: $00000047 VOL: 0
+; 0001 0031   // ADC initialization
+; 0001 0032   // ADC Clock frequency: 1000.000 kHz
+; 0001 0033   // ADC Voltage Reference: AVCC pin
+; 0001 0034   // ADC Auto Trigger Source: Free Running
+; 0001 0035   ADMUX=FIRST_ADC_INPUT | ADC_VREF_TYPE;
+;PCODE: $00000048 VOL: 0
+;PCODE: $00000049 VOL: 0
+; 0001 0036   ADCSRA=(1<<ADEN) | (1<<ADSC) | (1<<ADATE) | (0<<ADIF) | (1<<ADIE) | (0<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
+;PCODE: $0000004A VOL: 0
+;PCODE: $0000004B VOL: 0
+; 0001 0037   SFIOR=(0<<ADTS2) | (0<<ADTS1) | (0<<ADTS0);
+;PCODE: $0000004C VOL: 0
+;PCODE: $0000004D VOL: 0
+; 0001 0038 }
+;PCODE: $0000004E VOL: 0
+;PCODE: $0000004F VOL: 0

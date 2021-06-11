@@ -1,0 +1,12 @@
+VERSION:3 SOURCE_TIMESTAMP:526818F2
+NODE:I LEVEL:0 LINE:10 "\\VBOXSVR\virtual_share\Micro Lab\test2_MaryamSaeedmehr_9629373\codevision\source\configuration.h"
+NODE:V LEVEL:0 LINE:13 "i -> RAM:????"
+NODE:V LEVEL:0 LINE:15 "number -> RAM:????"
+NODE:V LEVEL:0 LINE:16 "number_digit -> RAM:????"
+NODE:C LEVEL:0 LINE:17 "digit -> FLASH"
+NODE:F LEVEL:0 LINE:32 "ioConfiguration(unsigned char portSel,unsigned char config)"
+NODE:F LEVEL:0 LINE:53 "subRoutine1(unsigned char portSel,unsigned char turningOn,uint16_t delay)"
+NODE:F LEVEL:0 LINE:98 "subRoutine2(unsigned char x,uint16_t duration)"
+NODE:F LEVEL:0 LINE:108 "subRoutine3(unsigned char inPort,unsigned char outPort)"
+NODE:F LEVEL:0 LINE:146 "subRoutine4(unsigned char direction,unsigned char segment)"
+NODE:F LEVEL:0 LINE:194 "subRoutine5(unsigned char stepSize)"

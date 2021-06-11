@@ -1,0 +1,5 @@
+VERSION:3 SOURCE_TIMESTAMP:5297AA74
+NODE:I LEVEL:0 LINE:1 "C:\cvavr\BIN\test6\source\test6_lib.h"
+NODE:F LEVEL:0 LINE:3 "io_init(void)"
+NODE:F LEVEL:0 LINE:30 "timer_init(void)"
+NODE:F LEVEL:0 LINE:44 "board_init(void)"

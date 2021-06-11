@@ -1,0 +1,53 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+result                                                                            0x02EB       2
+covid                                                                             0x02ED       2
+_seed                                                                             0x02EF       4
+_base_y                                                                           0x02F3       4
+_lcd_x                                                                            0x02F7       1
+_lcd_y                                                                            0x02F8       1
+_lcd_maxx                                                                         0x02F9       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R5           1
+j                                                                                 R4           1
+digit                                                                             R7           1
+newDigit                                                                          R6           1
+lcd_screen                                                                        R8,R9        2
+speed                                                                             R11          1
+time                                                                              R10          1
+weigt                                                                             R13          1
+temp                                                                              R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x00156     24
+io_init                                                                           0x0016E     15
+interrupt_init                                                                    0x0017D     10
+board_init                                                                        0x00187      6
+ext_int0_isr                                                                      0x0018D     72
+subRoutine1                                                                       0x001D5     20
+subRoutine2                                                                       0x001E9     38
+subRoutine3                                                                       0x0020F     39
+subRoutine4                                                                       0x00236      3
+strlen                                                                            0x0033D     12
+strlenf                                                                           0x00349     13
+strncpy                                                                           0x00356     21
+put_buff_G102                                                                     0x0036B     64
+_print_G102                                                                       0x003AB    308
+sprintf                                                                           0x004DF     52
+_lcd_write_nibble_G103                                                            0x00513     20
+_lcd_write_data                                                                   0x00527     12
+lcd_gotoxy                                                                        0x00533     17
+lcd_clear                                                                         0x00544     14
+lcd_putchar                                                                       0x00552     32
+lcd_puts                                                                          0x00572     17
+lcd_init                                                                          0x00583     47

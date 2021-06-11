@@ -1,0 +1,90 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+glcd_state                                                                        0x0174      29
+name                                                                              0x0191      64
+ks0108_coord                                                                      0x01D1       3
+_seed                                                                             0x01D4       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+second                                                                            R5           1
+minute                                                                            R4           1
+hour                                                                              R7           1
+digital_time                                                                      R8,R9        2
+i                                                                                 R6           1
+j                                                                                 R11          1
+k                                                                                 R10          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x006AA     14
+_io_init_                                                                         0x006B8     10
+_glcd_init_                                                                       0x006C2     15
+_timer_init_                                                                      0x006D1     18
+_board_init_                                                                      0x006E3      3
+radian                                                                            0x006E6     10
+my_line                                                                           0x006F0     84
+update_clock                                                                      0x00744     92
+timer1_ovf_isr                                                                    0x007A0     46
+set_portD                                                                         0x007CE     18
+set_portA                                                                         0x007E0     20
+subRoutine1                                                                       0x007F4     63
+subRoutine2                                                                       0x00833     10
+subRoutine3                                                                       0x0083D      5
+ks0108_enable_G100                                                                0x00842      4
+ks0108_disable_G100                                                               0x00846      4
+ks0108_rdbus_G100                                                                 0x0084A      7
+ks0108_busy_G100                                                                  0x00851     24
+ks0108_wrcmd_G100                                                                 0x00869      6
+ks0108_setloc_G100                                                                0x0086F     18
+ks0108_gotoxp_G100                                                                0x00881     15
+ks0108_nextx_G100                                                                 0x00890     21
+ks0108_wrdata_G100                                                                0x008A5      9
+ks0108_rddata_G100                                                                0x008AE      9
+ks0108_rdbyte_G100                                                                0x008B7     10
+glcd_init                                                                         0x008C1    100
+glcd_clear                                                                        0x00925     38
+glcd_putpixel                                                                     0x0094B     37
+glcd_getpixel                                                                     0x00970     25
+ks0108_wrmasked_G100                                                              0x00989     59
+glcd_block                                                                        0x009C4    477
+glcd_clipx                                                                        0x00BA1     18
+glcd_clipy                                                                        0x00BB3     18
+glcd_setpixel                                                                     0x00BC5      9
+glcd_imagesize                                                                    0x00BCE     40
+glcd_getcharw_G101                                                                0x00BF6    111
+glcd_new_line_G101                                                                0x00C65     20
+glcd_putchar                                                                      0x00C79     99
+glcd_outtextxy                                                                    0x00CDC     21
+glcd_putimagef                                                                    0x00CF1     44
+glcd_putpixelm_G101                                                               0x00D1D     27
+glcd_moveto                                                                       0x00D38     13
+glcd_line                                                                         0x00D45    246
+glcd_plot8_G101                                                                   0x00E3B    343
+glcd_line2_G101                                                                   0x00F92     49
+glcd_quadrant_G101                                                                0x00FC3     99
+glcd_circle                                                                       0x01026     11
+put_buff_G103                                                                     0x01031     64
+_print_G103                                                                       0x01071    308
+sprintf                                                                           0x011A5     52
+ftrunc                                                                            0x011D9     49
+floor                                                                             0x0120A     18
+log                                                                               0x0121C    134
+exp                                                                               0x012A2    152
+pow                                                                               0x0133A     82
+sin                                                                               0x0138C    130
+cos                                                                               0x0140E     13
+memset                                                                            0x0141B     16
+strlen                                                                            0x0142B     12
+strlenf                                                                           0x01437     13
+glcd_getmask                                                                      0x01444     11
+glcd_mappixcolor1bit                                                              0x0144F     40
+glcd_readmem                                                                      0x01477     31
+glcd_writemem                                                                     0x01496     31

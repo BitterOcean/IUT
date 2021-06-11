@@ -1,0 +1,11 @@
+{
+    "markdown.preview.fontSize": 13,
+    "debug.console.fontSize": 20,
+    "window.zoomLevel": 1,
+    "terminal.integrated.fontSize": 13,
+    "editor.fontSize": 15,
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "test4_lib.h": "c"
+    }
+}

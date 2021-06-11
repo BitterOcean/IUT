@@ -1,0 +1,25 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+i                                                                                 0x0160       1
+number                                                                            0x0161       1
+number_digit                                                                      0x0162       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x0004A     39
+ioConfiguration                                                                   0x00071     28
+subRoutine1                                                                       0x0008D     74
+subRoutine2                                                                       0x000D7     41
+subRoutine3                                                                       0x00100     64
+subRoutine4                                                                       0x00140     71
+subRoutine5                                                                       0x00187    128

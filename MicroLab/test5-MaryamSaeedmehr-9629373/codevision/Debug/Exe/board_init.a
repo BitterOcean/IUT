@@ -1,0 +1,155 @@
+;#include "test5_lib.h"
+;PCODE: $00000000 VOL: 0
+	#ifndef __SLEEP_DEFINED__
+;PCODE: $00000001 VOL: 0
+	#define __SLEEP_DEFINED__
+;PCODE: $00000002 VOL: 0
+	.EQU __se_bit=0x40
+;PCODE: $00000003 VOL: 0
+	.EQU __sm_mask=0xB0
+;PCODE: $00000004 VOL: 0
+	.EQU __sm_powerdown=0x20
+;PCODE: $00000005 VOL: 0
+	.EQU __sm_powersave=0x30
+;PCODE: $00000006 VOL: 0
+	.EQU __sm_standby=0xA0
+;PCODE: $00000007 VOL: 0
+	.EQU __sm_ext_standby=0xB0
+;PCODE: $00000008 VOL: 0
+	.EQU __sm_adc_noise_red=0x10
+;PCODE: $00000009 VOL: 0
+	.SET power_ctrl_reg=mcucr
+;PCODE: $0000000A VOL: 0
+	#endif
+;PCODE: $0000000B VOL: 0
+;PCODE: $0000000C VOL: 0
+;
+;void io_init(){
+; 0001 0003 void io_init(){
+
+	.CSEG
+;PCODE: $0000000D VOL: 0
+;PCODE: $0000000E VOL: 0
+; 0001 0004     // Input/Output Ports initialization
+; 0001 0005     // Port A initialization
+; 0001 0006     // Function: Bit7=In Bit6=In Bit5=In Bit4=In Bit3=In Bit2=In Bit1=In Bit0=In
+; 0001 0007     DDRA=(0<<DDA7) | (0<<DDA6) | (0<<DDA5) | (0<<DDA4) | (0<<DDA3) | (0<<DDA2) | (0<<DDA1) | (0<<DDA0);
+;PCODE: $0000000F VOL: 0
+;PCODE: $00000010 VOL: 0
+; 0001 0008     // State: Bit7=T Bit6=T Bit5=T Bit4=T Bit3=T Bit2=T Bit1=T Bit0=T
+; 0001 0009     PORTA=(0<<PORTA7) | (0<<PORTA6) | (0<<PORTA5) | (0<<PORTA4) | (0<<PORTA3) | (0<<PORTA2) | (0<<PORTA1) | (0<<PORTA0);
+;PCODE: $00000011 VOL: 0
+;PCODE: $00000012 VOL: 0
+; 0001 000A 
+; 0001 000B     // Port B initialization
+; 0001 000C     // Function: Bit7=Out Bit6=Out Bit5=Out Bit4=Out Bit3=Out Bit2=Out Bit1=Out Bit0=Out
+; 0001 000D     DDRB=(1<<DDB7) | (1<<DDB6) | (1<<DDB5) | (1<<DDB4) | (1<<DDB3) | (1<<DDB2) | (1<<DDB1) | (1<<DDB0);
+;PCODE: $00000013 VOL: 0
+;PCODE: $00000014 VOL: 0
+; 0001 000E     // State: Bit7=0 Bit6=0 Bit5=0 Bit4=0 Bit3=0 Bit2=0 Bit1=0 Bit0=0
+; 0001 000F     PORTB=(0<<PORTB7) | (0<<PORTB6) | (0<<PORTB5) | (0<<PORTB4) | (0<<PORTB3) | (0<<PORTB2) | (0<<PORTB1) | (0<<PORTB0);
+;PCODE: $00000015 VOL: 0
+;PCODE: $00000016 VOL: 0
+; 0001 0010 
+; 0001 0011     // Port C initialization
+; 0001 0012     // Function: Bit7=Out Bit6=Out Bit5=Out Bit4=Out Bit3=Out Bit2=Out Bit1=Out Bit0=Out
+; 0001 0013     DDRC=(1<<DDC7) | (1<<DDC6) | (1<<DDC5) | (1<<DDC4) | (1<<DDC3) | (1<<DDC2) | (1<<DDC1) | (1<<DDC0);
+;PCODE: $00000017 VOL: 0
+;PCODE: $00000018 VOL: 0
+; 0001 0014     // State: Bit7=0 Bit6=0 Bit5=0 Bit4=0 Bit3=0 Bit2=0 Bit1=0 Bit0=0
+; 0001 0015     PORTC=(0<<PORTC7) | (0<<PORTC6) | (0<<PORTC5) | (0<<PORTC4) | (0<<PORTC3) | (0<<PORTC2) | (0<<PORTC1) | (0<<PORTC0);
+;PCODE: $00000019 VOL: 0
+;PCODE: $0000001A VOL: 0
+; 0001 0016 
+; 0001 0017     // Port D initialization
+; 0001 0018     // Function: Bit7=In Bit6=Out Bit5=In Bit4=In Bit3=In Bit2=In Bit1=Out Bit0=Out
+; 0001 0019     DDRD=(0<<DDD7) | (0<<DDD6) | (0<<DDD5) | (0<<DDD4) | (0<<DDD3) | (0<<DDD2) | (1<<DDD1) | (1<<DDD0);
+;PCODE: $0000001B VOL: 0
+;PCODE: $0000001C VOL: 0
+; 0001 001A     // State: Bit7=T Bit6=0 Bit5=T Bit4=T Bit3=T Bit2=T Bit1=0 Bit0=0
+; 0001 001B     PORTD=(0<<PORTD7) | (0<<PORTD6) | (0<<PORTD5) | (0<<PORTD4) | (0<<PORTD3) | (0<<PORTD2) | (0<<PORTD1) | (0<<PORTD0);
+;PCODE: $0000001D VOL: 0
+;PCODE: $0000001E VOL: 0
+; 0001 001C }
+;PCODE: $0000001F VOL: 0
+;PCODE: $00000020 VOL: 0
+;
+;void timer_init(){
+; 0001 001E void timer_init(){
+;PCODE: $00000021 VOL: 0
+;PCODE: $00000022 VOL: 0
+; 0001 001F     // Timer/Counter 0 initialization
+; 0001 0020     // Clock source: System Clock
+; 0001 0021     // Clock value: 7.813 kHz
+; 0001 0022     // Mode: Phase correct PWM top=0xFF
+; 0001 0023     // OC0 output: Non-Inverted PWM
+; 0001 0024     // Timer Period: 65.28 ms
+; 0001 0025     // Output Pulse(s):
+; 0001 0026     // OC0 Period: 65.28 ms Width: 6.656 ms
+; 0001 0027     TCCR0=(1<<WGM00) | (1<<COM01) | (0<<COM00) | (0<<WGM01) | (1<<CS02) | (0<<CS01) | (1<<CS00);
+;PCODE: $00000023 VOL: 0
+;PCODE: $00000024 VOL: 0
+; 0001 0028     TCNT0=0x00;
+;PCODE: $00000025 VOL: 0
+;PCODE: $00000026 VOL: 0
+; 0001 0029     OCR0=0x1A;
+;PCODE: $00000027 VOL: 0
+;PCODE: $00000028 VOL: 0
+; 0001 002A 
+; 0001 002B     // Timer/Counter 2 initialization
+; 0001 002C     // Clock source: System Clock
+; 0001 002D     // Clock value: 7.813 kHz
+; 0001 002E     // Mode: Normal top=0xFF
+; 0001 002F     // OC2 output: Disconnected
+; 0001 0030     // Timer Period: 9.984 ms
+; 0001 0031     ASSR=0<<AS2;
+;PCODE: $00000029 VOL: 0
+;PCODE: $0000002A VOL: 0
+; 0001 0032     TCCR2=(0<<PWM2) | (0<<COM21) | (0<<COM20) | (0<<CTC2) | (1<<CS22) | (1<<CS21) | (1<<CS20);
+;PCODE: $0000002B VOL: 0
+;PCODE: $0000002C VOL: 0
+; 0001 0033     TCNT2=0xB2;
+;PCODE: $0000002D VOL: 0
+;PCODE: $0000002E VOL: 0
+; 0001 0034     OCR2=0x00;
+;PCODE: $0000002F VOL: 0
+;PCODE: $00000030 VOL: 0
+; 0001 0035 
+; 0001 0036     // Timer(s)/Counter(s) Interrupt(s) initialization
+; 0001 0037     TIMSK=(0<<OCIE2) | (1<<TOIE2) | (0<<TICIE1) | (0<<OCIE1A) | (0<<OCIE1B) | (0<<TOIE1) | (1<<OCIE0) | (0<<TOIE0);
+;PCODE: $00000031 VOL: 0
+;PCODE: $00000032 VOL: 0
+; 0001 0038 }
+;PCODE: $00000033 VOL: 0
+;PCODE: $00000034 VOL: 0
+;
+;void board_init(){
+; 0001 003A void board_init(){
+;PCODE: $00000035 VOL: 0
+;PCODE: $00000036 VOL: 0
+; 0001 003B     io_init();
+;PCODE: $00000037 VOL: 0
+; 0001 003C 
+; 0001 003D     // Alphanumeric LCD initialization
+; 0001 003E     // Connections are specified in the
+; 0001 003F     // Project|Configure|C Compiler|Libraries|Alphanumeric LCD menu:
+; 0001 0040     // RS - PORTC Bit 0
+; 0001 0041     // RD - PORTC Bit 1
+; 0001 0042     // EN - PORTC Bit 2
+; 0001 0043     // D4 - PORTC Bit 4
+; 0001 0044     // D5 - PORTC Bit 5
+; 0001 0045     // D6 - PORTC Bit 6
+; 0001 0046     // D7 - PORTC Bit 7
+; 0001 0047     // Characters/line: 16
+; 0001 0048     lcd_init(16);
+;PCODE: $00000038 VOL: 0
+;PCODE: $00000039 VOL: 0
+; 0001 0049     timer_init();
+;PCODE: $0000003A VOL: 0
+; 0001 004A     #asm("sei")
+;PCODE: $0000003B VOL: 0
+	sei
+;PCODE: $0000003C VOL: 0
+; 0001 004B }
+;PCODE: $0000003D VOL: 0
+;PCODE: $0000003E VOL: 0

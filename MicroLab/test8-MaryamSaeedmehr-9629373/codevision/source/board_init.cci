@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:52BC8496
+NODE:I LEVEL:0 LINE:1 "C:\cvavr\BIN\test8\source\test8_lib.h"
+NODE:F LEVEL:0 LINE:3 "_io_init_(void)"
+NODE:F LEVEL:0 LINE:30 "_glcd_init_(void)"
+NODE:F LEVEL:0 LINE:63 "_timer_init_(void)"
+NODE:F LEVEL:0 LINE:79 "_board_init_(void)"

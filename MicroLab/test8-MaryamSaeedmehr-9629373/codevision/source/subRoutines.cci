@@ -1,0 +1,11 @@
+VERSION:3 SOURCE_TIMESTAMP:52BC9286
+NODE:I LEVEL:0 LINE:1 "C:\cvavr\BIN\test8\source\test8_lib.h"
+NODE:V LEVEL:0 LINE:3 "i -> R6"
+NODE:V LEVEL:0 LINE:3 "j -> R11"
+NODE:V LEVEL:0 LINE:3 "k -> R10"
+NODE:V LEVEL:0 LINE:4 "name -> RAM:????"
+NODE:F LEVEL:0 LINE:11 "set_portD(uint8_t a,uint8_t b,uint8_t size)"
+NODE:F LEVEL:0 LINE:17 "set_portA(uint8_t num)"
+NODE:F LEVEL:0 LINE:22 "subRoutine1(uint8_t round)"
+NODE:F LEVEL:0 LINE:35 "subRoutine2(void)"
+NODE:F LEVEL:0 LINE:39 "subRoutine3(void)"

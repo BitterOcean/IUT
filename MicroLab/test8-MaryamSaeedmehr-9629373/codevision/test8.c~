@@ -1,0 +1,19 @@
+#include <header.h>
+#include <delay.h>
+void main(void)
+{
+
+init_all();
+
+two();
+delay_ms(3000);
+
+three();
+one(10);  
+
+
+while (1)
+    {
+    
+    }
+}

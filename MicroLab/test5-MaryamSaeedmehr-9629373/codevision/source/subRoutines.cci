@@ -1,0 +1,10 @@
+VERSION:3 SOURCE_TIMESTAMP:529196D3
+NODE:I LEVEL:0 LINE:1 "C:\cvavr\BIN\test5\source\test5_lib.h"
+NODE:V LEVEL:0 LINE:3 "counter -> R5"
+NODE:V LEVEL:0 LINE:4 "Stepper -> R4"
+NODE:V LEVEL:0 LINE:5 "duty_cycle -> R7"
+NODE:F LEVEL:0 LINE:7 "timer0_comp_isr(void)"
+NODE:F LEVEL:0 LINE:14 "timer2_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:66 "subRoutine1(void)"
+NODE:F LEVEL:0 LINE:108 "subRoutine3(void)"
+NODE:F LEVEL:0 LINE:116 "subRoutine4(void)"

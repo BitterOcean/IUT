@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:5273A64E
+NODE:I LEVEL:0 LINE:1 "C:\cvavr\inc\mega16.h"
+NODE:I LEVEL:0 LINE:2 "C:\cvavr\inc\alcd.h"
+NODE:F LEVEL:0 LINE:4 "io_init(void)"
+NODE:F LEVEL:0 LINE:44 "interrupt_init(void)"
+NODE:F LEVEL:0 LINE:57 "board_init(void)"
