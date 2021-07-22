@@ -35,7 +35,7 @@ This repository contains all the courseworks (actually, ones I could get my hand
   - <a href="https://github.com/BitterOcean/IUT/tree/master/LinearAlgebra">Linear Algebra</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/MicroLab">Micro Lab</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/NetworkLab">Network Lab</a>
-  - <a href="https://github.com/BitterOcean/IUT/tree/master/SecureComputing">Secure Computing</a>
+  - <a href="https://github.com/BitterOcean/IUT/tree/master/SecureComputing">Computer Security</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/SoftwareEngineering2">Software Engineering 2</a>
 ---
 
