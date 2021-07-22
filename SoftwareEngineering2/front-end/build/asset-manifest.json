@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/front-end/static/js/main.6cb30486.chunk.js",
+    "main.js.map": "/front-end/static/js/main.6cb30486.chunk.js.map",
+    "runtime-main.js": "/front-end/static/js/runtime-main.7f1cd3a3.js",
+    "runtime-main.js.map": "/front-end/static/js/runtime-main.7f1cd3a3.js.map",
+    "static/css/2.be181dbf.chunk.css": "/front-end/static/css/2.be181dbf.chunk.css",
+    "static/js/2.fa649983.chunk.js": "/front-end/static/js/2.fa649983.chunk.js",
+    "static/js/2.fa649983.chunk.js.map": "/front-end/static/js/2.fa649983.chunk.js.map",
+    "index.html": "/front-end/index.html",
+    "static/css/2.be181dbf.chunk.css.map": "/front-end/static/css/2.be181dbf.chunk.css.map",
+    "static/js/2.fa649983.chunk.js.LICENSE.txt": "/front-end/static/js/2.fa649983.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/front-end/static/media/Vazir-Thin-FD.fd15fed2.eot",
+    "static/media/file_transfer.de7fe4ac.jpg": "/front-end/static/media/file_transfer.de7fe4ac.jpg",
+    "static/media/logo.3c48b124.png": "/front-end/static/media/logo.3c48b124.png",
+    "static/media/upload.06f85bb1.png": "/front-end/static/media/upload.06f85bb1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f1cd3a3.js",
+    "static/css/2.be181dbf.chunk.css",
+    "static/js/2.fa649983.chunk.js",
+    "static/js/main.6cb30486.chunk.js"
+  ]
+}
