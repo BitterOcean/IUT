@@ -37,7 +37,7 @@ This repository contains all the courseworks (actually, ones I could get my hand
   - <a href="https://github.com/BitterOcean/IUT/tree/master/NetworkLab">Network Lab</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/SecureComputing">Computer Security</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/SoftwareEngineering2">Software Engineering 2</a>
-  - ## **Semister 1400_1** ![Term](https://img.shields.io/badge/Term-9-gray)
+  - ## **Semister 1400_1** ![Term](https://img.shields.io/badge/Term-9-brown)
   - <a href="https://github.com/BitterOcean/IUT/tree/master/MachineLearning">Machine Learning</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/GameTheory">Game Theory</a>
 ---
