@@ -1,6 +1,6 @@
 # **IUT** [![Rating](https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter?label=Rating&logo=Rating&style=plastic)](https://github.com/BitterOcean/IUT)
 
-This repository contains all the courseworks (actually, ones I could get my hands on) during my undergraduate studies in Isfahan University of Technology 
+This repository contains all the courseworks (actually, ones I could get my hands on) during my undergraduate study at Isfahan University of Technology 
 
 ---
 # Files 
