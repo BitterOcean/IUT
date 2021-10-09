@@ -1,0 +1,317 @@
+\documentclass[A4paper,conference]{IEEEtran}
+
+\usepackage{amsmath,amssymb}
+
+\IEEEoverridecommandlockouts
+
+
+\title{Parity Space Residual Generator for \\ Non-uniformly Sampled Systems: Direct Designs}
+\date{}
+\author{Iman Izadi, Sirish L. Shah and Tongwen Chen
+\thanks{I. Izadi is with the Department of Electrical \& Computer Engineering,
+Isfahan University of Technology.}
+\thanks{S.L. Shah is with the Department of Chemical \& Materials Engineering,
+University of Alberta.}
+\thanks{T. Chen is with the Department of Electrical \& Computer Engineering,
+University of Alberta.}}
+
+%*********************************************************************
+\begin{document}
+\maketitle
+
+%************** Abstract and Keywords *********************
+\begin{abstract}
+
+Non-uniform sampled-data systems are widely found in industry. In
+these systems the process output is sampled and the control input is
+generated at non-uniformly distributed time instants. In this paper,
+an optimal parity based residual generator is developed for
+non-uniform sampled-data systems. In the direct approach used here,
+the intersample behavior of fault and unknown inputs is captured by
+introducing operators that map continuous-time signals to
+discrete-time signals.
+
+\end{abstract}
+
+\begin{keywords}
+Fault detection; Sampled-data systems; Non-uniform sampling; Residual generation.
+\end{keywords}
+%************** Abstract and Keywords *********************
+
+%************** Introduction *********************
+\section{Introduction}\label{sec1}
+Modern industrial control systems are widely exposed to faults which
+can cause undesirable performance, instability, total failure of the
+system and even dangerous situations. In order to maintain quality,
+reliability and safety, faults should be promptly detected and
+identified so that appropriate remedies can be applied. The problem
+of fault detection and isolation (FDI) has widely been studied in
+the past decades and numerous design methods are available in the
+literature \cite{ChenPatton,Isermann}.
+
+Traditionally a sampled-data controller/FDI is designed using
+indirect approach. In the indirect approach, design is carried out
+through an intermediate step of discretizing a continuous-time
+system. The discretization usually involves some level of
+approximation which makes the design unacceptable if sampling
+intervals are large. As an alternative approach, direct methods have
+been used to design sampled-data controllers and more recently
+sampled-data FDI \cite{Chen,Izadi2,Zhang01a}. In direct
+approach, a discrete-time controller/FDI is directly designed for
+the continuous-time process taking into account the hybrid nature of
+the sampled-data system. Therefore, no approximation is involved in
+direct designs.
+
+\setlength{\unitlength}{0.8mm}
+\begin{figure}[tbp]
+\begin{center}
+\begin{picture}(90,65)(0,7)
+\put(41,62){\makebox(0,0){$d(t)$}}
+\put(51,62){\makebox(0,0){$f(t)$}} \put(42,60){\vector(0,-1){10}}
+\put(49,60){\vector(0,-1){10}}
+\put(35,38){\framebox(20,12){Process}} \put(55,44){\line(1,0){30}}
+\put(70,47){\makebox(0,0){$y(t)$}} \put(85,44){\line(0,-1){17}}
+\put(85,27){\vector(-1,0){10}}
+\put(65,23){\framebox(10,8){\small{A/D}}}
+\multiput(64,27)(-2,0){5}{\circle*{0.03}}
+%\put(62,30){\makebox(0,0){$\psi(k)$}}
+\put(55,27){\vector(-1,0){0}}
+\put(35,22){\framebox(20,10){Controller}}
+\multiput(34,27)(-2,0){5}{\circle*{0.03}}
+\put(25,27){\vector(-1,0){0}}
+%\put(31,30){\makebox(0,0){$\upsilon(k)$}}
+\put(15,23){\framebox(10,8){\small{D/A}}} \put(5,27){\line(1,0){10}}
+\put(5,27){\line(0,1){17}} \put(5,44){\vector(1,0){30}}
+\put(20,47){\makebox(0,0){$u(t)$}} \put(37,7){\framebox(16,10){FDI}}
+\multiput(60,27)(0,-2){9}{\circle*{0.03}}
+\multiput(60,11)(-2,0){4}{\circle*{0.03}}
+\put(53,11){\vector(-1,0){0}}
+\multiput(31,27)(0,-2){7}{\circle*{0.03}}
+\multiput(31,15)(2,0){3}{\circle*{0.03}}
+\put(37,15){\vector(1,0){0}}
+\multiput(36,10)(-2,0){16}{\circle*{0.03}}
+\put(4,10){\vector(-1,0){0}} \put(15,14){\makebox(0,0){residual}}
+\end{picture}
+\end{center}
+\caption{FDI in a sampled-data scheme} \label{fig1}
+\end{figure}
+
+
+In this paper, we develop an optimal FDI for non-uniform
+sampled-data systems using direct design. The FDI which is based on
+the parity space approach is designed in three steps: First the
+relationship between the input and output of the process in a
+certain time frame is obtained. Then a residual generator is
+constructed based on the input-output relation. Finally the design
+parameter is calculated by minimizing a performance index. As the
+main assumption in direct approach, the fault and disturbance input
+can arbitrarily vary over time. This is in contrast to the
+assumption usually made in indirect approach that fault and
+disturbance signals are constant over the sampling intervals. The
+output sampling and control updating times can also be arbitrarily
+distributed over time and there is no need for them to follow a
+periodic pattern. This makes the residual generator applicable to
+general non-uniform sampled-data systems.
+
+The paper is organized as follows. In Section~\ref{sec2}, the parity
+space approach of residual generation and other required
+preliminaries are reviewed, and also the discretion of the system is
+given. Final conclusions and remarks are
+given in Section~\ref{sec9}.
+
+%*********************************************************************
+\section{Preliminaries}\label{sec2}
+
+\subsection{Parity-space Approach}
+Consider the discrete-time system
+\begin{equation*}
+\left \{\begin{array}{l}
+ x(k+1)=Ax(k)+Bu(k)+Ed(k)+Ff(k) \\
+ y(k)=Cx(k) \\ %+Du(k)+D_dd(k)+D_ff(k) \\
+ \end{array}\right.
+\end{equation*}
+where $x(k)\in \mathbb{R}^{n_x}$ is the state vector, $u(k)\in
+\mathbb{R}^{n_u}$ the vector of control input, $y(k)\in
+\mathbb{R}^{n_y}$ the vector of process output, $d(k)\in
+\mathbb{R}^{n_d}$ the vector of unknown inputs (e.g., disturbance,
+noise, model mismatch, etc.) and $f(k)\in \mathbb{R}^{n_f}$ the
+vector of faults to be detected. $A$, $B$, $C$, $E$, and $F$ are
+known matrices of appropriate dimensions.
+
+For a fixed number $s$, referred to as the order of parity relation,
+define $y_s(k)$ as
+\begin{equation*}
+  y_s(k) = \left[
+    \begin{array}{c}
+    y(k-s) \\
+    y(k-s+1) \\
+    \vdots \\
+    y(k) \\
+    \end{array}
+    \right]_{(s+1)n_y \times 1},
+\end{equation*}
+$u_s(k)$, $d_s(k)$ and $f_s(k)$ are also defined similarly. It can
+be easily shown that $y_s(k)$, $u_s(k)$, $d_s(k)$ and $f_s(k)$ are
+related through the following expression
+\begin{equation}\label{parrel}
+    y_s(k) = H_ox(k-s) + H_u u_s(k) + H_d d_s(k) + H_f f_s(k),
+\end{equation}
+where
+\begin{equation*}
+  H_{o} = \left[
+    \begin{array}{c}
+    C \\
+    CA \\
+    \vdots \\
+    CA^s \\
+    \end{array}
+    \right],
+\end{equation*}
+\begin{equation*}
+  H_{u} = \left[
+    \begin{array}{ccccc}
+      0 & 0 & \cdots & 0 & 0 \\
+      CB & 0 & \cdots & 0 & 0 \\
+      \vdots & \vdots &  & \vdots & \vdots \\
+      CA^{s-1}B & CA^{s-2}B & \cdots & CB & 0 \\
+    \end{array}
+    \right].
+\end{equation*}
+$H_d$ and $H_f$ are defined similar to $H_u$. Based on
+(\ref{parrel}), a parity space based residual generator can be
+formulated as
+\begin{equation*}%\label{SRres}
+    r(k)=v_s\big(y_s(k)-H_{u}u_s(k)\big),
+\end{equation*}
+where $r(k)\in \mathbb{R}$ is the residual. 
+
+\subsection{Operator Norm and Adjoint Operator}
+\newcommand{\norm}[1]{\left\lVert#1\right \lVert}
+\newcommand{\innerp}[1]{\left \langle#1\right \rangle}
+
+Consider Hilbert spaces $\mathcal{X}$  and $\mathcal{Y}$ with inner
+products $\innerp{x_1,x_2}_\mathcal{X},~x_1,x_2 \in \mathcal{X}$ and
+$\innerp{y_1,y_2}_\mathcal{Y},~ y_1,y_2 \in \mathcal{Y}$,
+respectively. $\mathcal{X}$ and $\mathcal{Y}$ are not necessarily
+the same space, and even if they are, the inner products can be
+different. The norms of members of $\mathcal{X}$ and $\mathcal{Y}$
+are defined using the corresponding inner products as
+$\norm{x}_\mathcal{X}^2 = \innerp{x,x}_\mathcal{X},~ x\in
+\mathcal{X}$ and $\norm{y}_\mathcal{Y}^2 =
+\innerp{y,y}_\mathcal{Y},~ y\in \mathcal{Y}$. Also assume that
+$T:\mathcal{X} \rightarrow \mathcal{Y}$ is a bounded operator that
+maps $\mathcal{X}$ to $\mathcal{Y}$. The adjoint of $T$, denoted by
+$T^*$, is the unique bounded operator mapping $\mathcal{Y}$ to
+$\mathcal{X}$ that satisfies
+\begin{equation*}
+    \innerp{Tx,y}_\mathcal{Y} = \innerp{x,T^*y}_\mathcal{X}, \quad x \in \mathcal{X},~ y
+    \in \mathcal{Y}.
+\end{equation*}
+It can be easily shown that the adjoint of a constant matrix is its
+transpose.
+
+The induced norm of the operator $T$ is defined by
+\begin{equation*}
+    \norm{T} = \sup_{\norm{x}_\mathcal{X}\leq1} \norm{Tx}_\mathcal{Y}.
+\end{equation*}
+It is a well known fact  that
+\begin{equation}\label{norms}
+    \norm{T}^2 = \norm{T^*}^2 = \norm{T^*T} = \norm{TT^*}.
+\end{equation}
+
+\subsection{Process Description}
+Consider an LTI, strictly proper, continuous-time process with the
+following state-space representation
+\begin{equation}\label{mainsys}
+\left \{\begin{array}{l}
+ \dot{x}(t)=Ax(t)+Bu(t)+Ed(t)+Ff(t) \\
+ y(t)=Cx(t) \\
+ \end{array}\right.
+\end{equation}
+where $x(t)\in \mathbb{R}^{n_x}$ is the state vector, $u(t)\in
+\mathbb{R}^{n_u}$ the known vector of control input, $y(t)\in
+\mathbb{R}^{n_y}$ the vector of process output, $d(t)\in
+\mathbb{R}^{n_d}$ the vector of unknown input (to represent
+disturbance, noise, model mismatch and other uncertainties) and
+$f(t)\in \mathbb{R}^{n_f}$ the vector of fault to be detected. $A$,
+$B$, $C$, $E$ and $F$ are known matrices of appropriate dimensions.
+The assumption of strictly properness is standard in the
+sampled-data literature and necessary for boundedness of the
+sampling operator. In practice, because of antialiasing  filters
+that are used before sampling, the systems are always strictly
+proper.
+
+In the sampled-data framework, the measured output of the
+continuous-time process is sampled and transferred to a computer
+using an analog-to-digital converter (A/D). The control signal is
+then generated by the computer and applied to the process using a
+digital-to-analog converter (D/A). In a non-uniform sampled-data
+system, the output is sampled at non-uniformly spaced time instants
+and/or the control input is generated at non-uniformly spaced time
+instants. In this paper, for simplicity we assume that the
+input/output are generated/sampled synchronously at the same times.
+
+Let $T=\left\{t_0,t_1,t_2,\cdots\right\}$ be the set of time
+instants when the output is sampled (or the input is updated). Let
+$\ell_T(\mathbb{Z})$ be the vector space of all discrete-time
+signals corresponding to the time instants in $T$. Notice that the
+discrete-time signals in $\ell_T(\mathbb{Z})$ have no practical
+meaning unless the corresponding time instants, given by $T$, are
+known. Let $\mathcal{L}(\mathbb{R})$ be the vector space of all
+continuous-time signals.
+
+The D/A converter is modeled by non-uniform (zero-order) hold
+operator $H_T: \ell_T(\mathbb{Z}) \rightarrow
+\mathcal{L}(\mathbb{R})$ defined as
+\begin{equation*}
+    u(t)=H_T \upsilon_T(k)= \upsilon_T(k), \quad t_k \leq t < t_{k+1}.
+\end{equation*}
+Here $\upsilon_T(k)$ represent the discrete-time input.
+
+The A/D converter is also modeled by non-uniform sampling operator
+$S_T:\mathcal{L}(\mathbb{R}) \rightarrow \ell_T(\mathbb{Z})$ defined
+as
+\begin{equation*}
+    \psi_T(k)=S_Ty(t)=y(t_k),
+\end{equation*}
+where $\psi_T(k)$ denotes the discrete-time output.
+
+\section{Conclusions}\label{sec9}
+In this paper, we presented a direct method to design optimal parity
+based residual generator for non-uniform sampled-data systems. In
+direct design, no assumption is made on fault and disturbance input
+and hence there is no approximation in the solution. As a result, 
+the relationship between fault/disturbance and residual is
+expressed in terms of an operator rather than a matrix. However, it
+was shown that the norm of the operator is equal to the norm of a
+certain matrix. Therefore, the optimization problem can be converted
+to a regular matrix problem whose solution is known.
+
+%*********************************************************************
+\begin{thebibliography}{99}
+
+\bibitem{Chen}
+T. Chen and B. Francis, {\em Optimal Sampled-Data Control Systems},
+Springer, New York, 1995.
+
+\bibitem{ChenPatton}
+J. Chen and R. Patton, \emph{Robust Model-Based Fault Diagnosis for
+Dynamic Systems}, Kluwer Academic Publishers, Boston, 1999.
+
+\bibitem{Isermann}
+R. Isermann, \emph{Fault-Diagnosis Systems: An Introduction from
+Fault Detection to Fault Tolerance}, Springer, Berlin, 2006.
+
+\bibitem{Izadi2}
+I. Izadi, T. Chen and Q. Zhao, ``Norm invariant discretization for
+sampled-data fault detection'', \emph{Automatica}, vol.~41,
+pp.~1633--1637, 2005.
+
+\bibitem{Zhang01a}
+P. Zhang, S.X. Ding, G.Z. Wang and D.H. Zhou, ``An FDI approach for
+sampled-data systems'', \emph{Proceedings of the American Control
+Conference}, pp.~2702--2707, 2001.
+
+\end{thebibliography}
+
+\end{document}
