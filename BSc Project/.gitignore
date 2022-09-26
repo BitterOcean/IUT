@@ -1,4 +1,8 @@
-Dataset/
-DenseNet121.py
-CovidDetectionFromCTScanImagesUsingDenseNet121.py
+dataset/
 Pic/
+codes/
+history/
+imagenet/
+Sars-Cov2/
+saved_models/
+.ipynb_checkpoints/
