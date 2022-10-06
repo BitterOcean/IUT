@@ -7,8 +7,29 @@ A MATLAB project that implements an adaptive blind image watermarking algorithm 
 compares its NC results against JPEG attack with non-adaptive methods' ones.
 
 ---
-## Algorithm
-![Screenshot from 2022-10-06 19-45-11](https://user-images.githubusercontent.com/60509979/194365248-0432b199-cd01-4d0f-b60e-f7494f4d7dbc.png)
+## Method
+
+<div align="center">
+  <figure>
+    <img src="https://user-images.githubusercontent.com/60509979/194382529-6c6b3d40-579c-49e0-82b4-591ce0d7fabc.png" alt="Fig1" style="width: 40%;">
+    <br />
+    <figcaption><b>Fig.1 - Pseudo code of the proposed embedding procedure.</b></figcaption>
+  </figure>
+</div>
+<br />
+<br />
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/60509979/194379352-9d6450d5-1b50-488e-b949-e1dcb43a6221.png" alt="Fig0" style="width: 45%;">
+</div>
+
+<div align="center">
+  <figure>
+    <img src="https://user-images.githubusercontent.com/60509979/194365248-0432b199-cd01-4d0f-b60e-f7494f4d7dbc.png" alt="Fig2">
+    <br />
+    <figcaption><b>Fig.2 - Pseudo code of the proposed embedding algorithm.</b></figcaption>
+  </figure>
+</div>
+
 
 
 ---
