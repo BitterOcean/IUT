@@ -42,7 +42,7 @@ This repository contains all the courseworks (actually, ones I could get my hand
   - <a href="https://github.com/BitterOcean/IUT/tree/master/GameTheory">Game Theory</a>
 ---
 
-# Our Chart
+# The Curriculum of the Computer Engineering Bachelor’s Program 
 ![GeneralTerms](https://user-images.githubusercontent.com/60509979/73578589-4237f200-4495-11ea-94b0-f5328efcb6d5.png)
 ---
 ![SpecialTerms](https://user-images.githubusercontent.com/60509979/73578656-6c89af80-4495-11ea-85b4-33ccdc1ca069.png)
