@@ -39,7 +39,7 @@ compares its NC results against JPEG attack with non-adaptive methods' ones.
   </figure>
 </div>
 
-## Find Maximum of Alpha
+## Find Maximum of Alpha in Non-Adaptive Watermarking Methods
 For measuring the performance of an image watermarking method, there are two metrics whose trade–off is important: robustness, and transparency.
 Using these two individual metrics, I defined $$\rho = MSSIM \times NC$$ s a criterion to measure the robustness and transparency at the same time.
 
