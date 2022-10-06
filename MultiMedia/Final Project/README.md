@@ -1,4 +1,4 @@
-# **Image Watermarking in DCT domain**
+# **Image Watermarking in DCT Domain**
 ![Awesome](https://img.shields.io/badge/.-Awesome-%23FC60A8?style=for-the-badge&logo=awesomelists)
 ![Builed](https://img.shields.io/azure-devops/build/totodem/8cf3ec0e-d0c2-4fcd-8206-ad204f254a96/2?style=for-the-badge)
 ![License](https://img.shields.io/packagist/l/doctrine/orm?style=for-the-badge)
