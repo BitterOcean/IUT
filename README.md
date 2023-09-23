@@ -1,4 +1,5 @@
-# **IUT** [![Rating](https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter?label=Rating&logo=Rating&style=plastic)](https://github.com/BitterOcean/IUT)
+# **Isfahan University of Technology** 
+[![GitHub forks](https://img.shields.io/github/forks/BitterOcean/IUT?style=for-the-badge&color=%23A2C579)](https://github.com/BitterOcean/IUT) [![GitHub Repo stars](https://img.shields.io/github/stars/BitterOcean/IUT?style=for-the-badge&color=%23FFBB5C)](https://github.com/BitterOcean/IUT) [![GitHub watchers](https://img.shields.io/github/watchers/BitterOcean/IUT?style=for-the-badge&color=%23FBA1B7)](https://github.com/BitterOcean/IUT)
 
 This repository contains all the courseworks (actually, ones I could get my hands on) during my undergraduate study at Isfahan University of Technology 
 
