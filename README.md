@@ -1,7 +1,7 @@
 # **Isfahan University of Technology** 
 [![GitHub forks](https://img.shields.io/github/forks/BitterOcean/IUT?style=for-the-badge&color=%23A2C579)](https://github.com/BitterOcean/IUT) [![GitHub Repo stars](https://img.shields.io/github/stars/BitterOcean/IUT?style=for-the-badge&color=%23FFBB5C)](https://github.com/BitterOcean/IUT) [![GitHub watchers](https://img.shields.io/github/watchers/BitterOcean/IUT?style=for-the-badge&color=%23FBA1B7)](https://github.com/BitterOcean/IUT) [![GitHub repo size](https://img.shields.io/github/repo-size/BitterOcean/IUT?style=for-the-badge&color=%23FFDBAA)](https://github.com/BitterOcean/IUT) [![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/BitterOcean/IUT?style=for-the-badge&color=%23A78295)](https://github.com/BitterOcean/IUT)
 
-This repository contains all the courseworks (actually, ones I could get my hands on) during my undergraduate study at Isfahan University of Technology 
+This repository contains all the coursework (actually, ones I could get my hands on) during my undergraduate study at Isfahan University of Technology 
 
 ---
 # Files 
@@ -42,6 +42,12 @@ This repository contains all the courseworks (actually, ones I could get my hand
 - ## **Fall Semester 2021** ![Term](https://img.shields.io/badge/Hijri-Mehr_1400-brown)
   - <a href="https://github.com/BitterOcean/IUT/tree/master/MachineLearning">Machine Learning</a>
   - <a href="https://github.com/BitterOcean/IUT/tree/master/GameTheory">Game Theory</a>
+---
+
+# Course Description ![GitHub file size in bytes](https://img.shields.io/github/size/BitterOcean/IUT/IUT_Course_Description.pdf?style=flat) 
+
+<a href="https://github.com/BitterOcean/IUT/blob/master/IUT_Course_Description.pdf">![Static Badge](https://img.shields.io/badge/CLICK%20TO%20DOWNLOAD-21AF90?style=for-the-badge)</a>
+
 ---
 
 # The Curriculum of the Computer Engineering Bachelor’s Program 
